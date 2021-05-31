@@ -1,0 +1,18 @@
+V_T596J_AR elimine estos registros para RNOR Columna 5 Remuneracion OS
+
+RNOR	/3R2	01.01.1990	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/BC2	01.01.1990	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/BC4	01.01.1990	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/CR2	01.01.1900	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/CR4	01.01.1900	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/CR5	01.01.1900	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/CRS	01.01.1900	31.12.9999	- Substracción	A Amount out of payroll results
+RNOR	/Z04	01.01.1990	31.12.9999	+ Adición	A Amount out of payroll results
+RNOR	/Z34	01.01.1990	31.12.9999	+ Adición	A Amount out of payroll results
+
+
+Agregue en la V_T596J_AR
+REDU	/CR2	01.02.2018	31.12.9999	- Substracción	A Amount out of payroll results
+REDU	/CR4	01.02.2018	31.12.9999	- Substracción	A Amount out of payroll results
+REDU	/CR5	01.02.2018	31.12.9999	- Substracción	A Amount out of payroll results
+REDU	/CRS	01.02.2018	31.12.9999	- Substracción	A Amount out of payroll results
