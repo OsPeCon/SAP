@@ -15,7 +15,6 @@
 ***
 
 # Objetivo
-Validar numero de expediente via WS siempre y cuando sea un tipo de material
 
 # Especificacion
 
