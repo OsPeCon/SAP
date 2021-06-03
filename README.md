@@ -5,30 +5,33 @@ Se guardara informacion tecnica y documental de los distintos procesos de SAP
 
 Realizar la descarga de los siguientes programas:
 
-Git downloads: ttps://git-scm.com/downloads
+Git downloads: htps://git-scm.com/downloads
 
 Git Extensions: https://sourceforge.net/projects/gitextensions/
 
-## Forma de trabajo
+# Forma de trabajo
 
-Crear Carpeta en PC local
+# Al iniciar por primera vez
 
-Abrir Visual Studio Code
+* Crear Carpeta en PC local
 
-Menu: File - Open Folder y seleccionar carpeta creada en PC local
+* Abrir Visual Studio Code
 
-Menu: Terminal - New terminal
+* Menu: File - Open Folder y seleccionar carpeta creada en PC local
 
-Ejecutar el comando: git clone "Path de GitHub"
+* Menu: Terminal - New terminal
 
-Ejemplo: git clone https://github.com/OsPeCon/SAP.git
+* Ejecutar el comando: git clone "Path de GitHub"
 
-Al ejecutar este comando se cargaran en Visdual Studio Code y en la carpeta local la documentacion de GitHub.
-El Git Clone se debe ejecutar por unica vez.
+        Ejemplo: git clone https://github.com/OsPeCon/SAP.git
 
-Para subir las modififcaciones PUSH.
+        Al ejecutar este comando se cargaran en VisSual Studio Code y en la carpeta local la documentacion de GitHub.
 
-Para actualizar al inciar el dia PULL
+        El Git Clone se debe ejecutar por unica vez.
+
+* Para subir las modififcaciones PUSH.
+
+* Para actualizar al inciar el dia PULL
 
 
 
