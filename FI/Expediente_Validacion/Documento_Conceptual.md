@@ -9,7 +9,7 @@
 
 **Dirigida a:**	Dirigida a
 
-**CC.**	Con copia
+**CC.**	Con copia a 
 
 **Confeccionada por:** Analista
 
