@@ -29,10 +29,12 @@ Git Extensions: https://sourceforge.net/projects/gitextensions/
 
         El Git Clone se debe ejecutar por unica vez.
 
-* Para subir las modififcaciones PUSH.
+* Para subir las modififcaciones a GitHub COMMIT y luego PUSH.
 
 * Para actualizar al inciar el dia PULL
 
+# Trabajo Diario
 
+Al iniciar el Visual Studio Code ejecutar PULL para actualizar la carpeta local desde GitHub por si hubo modififcaciones a archivos de otros usuario de TI.
 
 
