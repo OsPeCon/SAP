@@ -1,5 +1,5 @@
 # Tecnología de la Información
-## Documento Conceptual
+## Documento ConceptualTecnico
 
 **Título:** Validacion Expediente Ape via WS
 
@@ -20,9 +20,16 @@ Insertar un WS en una transaccion standard de SAP
 Validar el ingreso de un Numero de expediente contra el Centro Autorizador
 
 # Especificacion
-SE80
-SM59
-Field_EXIT
-SE37 Zexpediente
+Enhancement Implementation:  ZENH_REFERENCIA (SE20)
+
+Programa: SAPMF05A
+
+INCLUDE: MF05AI10_PAI_ANFANG 
+
+Funcion: ZWS_CONSULTA_EXPEDIENTE 
+
+Destination: ZCONSULTA_EXPEDIENTE
+
+# Programa
 ![Prueba](images/Standard_01.png)
 ![Prueba](images/Standard_02.png)

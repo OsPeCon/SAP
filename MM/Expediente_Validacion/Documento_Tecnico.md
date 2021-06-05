@@ -1,10 +1,11 @@
 # Tecnología de la Información
-## Documento Tecnico
+## Documento ConceptualTecnico
 
-**Título:** Validacion de expediente MM
+**Título:** Validacion Expediente Ape via WS
+
 **Área de aplicación:**	MM
 
-**Fecha:** 01/06/2021
+**Fecha:** 05/06/2021
 
 **Dirigida a:**	
 
@@ -15,18 +16,19 @@
 ***
 
 # Objetivo
+Insertar un WS en una transaccion standard de SAP 
+Validar el ingreso de un Numero de expediente contra el Centro Autorizador
 
 # Especificacion
+Enhancement Implementation:  ZMM_VALIDA_EXPEDIENTE
 
-Se crea el enhancement ZMM_VALIDA_EXPEDIENTE en el include MM06EF0F_FCODE_LOOP del Programa SAPMM06E
+Programa: SAPMM06E	
+
+INCLUDE: MM06EF0F_FCODE_LOOP
+
+Funcion: ZWS_CONSULTA_EXPEDIENTE_OC
+
+Destination: 'ZCONSULTA_EXPEDIENTE_OC'
 
 
-# Ejemplo con viñetas
 
-* Lista 1
-  * Lista 1.1
-  * Lista 1.2
-  * Lista 1.3
-* Lista 2
-  * Lista 2.1
-  * Lista 2.2
