@@ -16,7 +16,7 @@
 ***
 
 # Objetivo
-Armar una vista que contenga las OC y Expediente de materiales quierurjico prueba nico lucas 
+Armar una vista que contenga las OC y Expediente de materiales quierurjico prueba nico lucas 2
 
 # Especificacion
 Prorama SAP: ZDATA_EXPEDIENTE_OC
