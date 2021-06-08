@@ -1,9 +1,9 @@
 # Tecnología de la Información
 ## Documento Tecnico
 
-**Título:** Titulo
+**Envío automático vía mail de notas de débito y credito propias** 
 
-**Área de aplicación:**	Aplicacion
+**Área de aplicación:**	Cuentas a Pagar y Hospitales
 
 **Fecha:** 08/06/21
 
