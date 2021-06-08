@@ -22,7 +22,7 @@ Envio de
 •	FORMULARIO:  ZSF_DEB_CRED (smart form) 
 Emisión de notas de débito propias registradas en SAP: Clase de clases de documento son KB y KD.
 
-•	TRANSACCION: ZFI_ENVIO_ND
+•	TRANSACCION: ZFI_ENVIO_ND ,,,,,,,
 PROGRAMA: ZFI_ENVIO_MAIL_DEB_CRED
 
 Datos de selección del programa:
