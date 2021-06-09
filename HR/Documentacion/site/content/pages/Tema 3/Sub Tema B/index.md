@@ -4,13 +4,8 @@ date: Last Modified
 permalink: /Tema 3/Sub Tema B/
 eleventyNavigation:
     key: subtemab
-<<<<<<< HEAD
-    parent: Tema 3
-    order: 50
-=======
     parent: tema3
-    order: 5
->>>>>>> a222861f7865d7cba5d16cfcdf55ce17262c75e4
+    order: 8
     title: Sub tema B.
 ---
 
