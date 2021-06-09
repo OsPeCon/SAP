@@ -5,7 +5,7 @@ permalink: /Tema 3/Sub Tema B/
 eleventyNavigation:
     key: subtemab
     parent: tema3
-    order: 5
+    order: 8
     title: Sub tema B.
 ---
 
