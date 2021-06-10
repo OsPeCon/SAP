@@ -8,6 +8,16 @@ eleventyNavigation:
     title: Envio de Mail automatico.
 ---
 
+# Titulo del tema
+
+## Descripcion
+
+## Detalle del proceso
+
+### Casos / Preguntas frecuentes
+
+## Documentacion Técnica
+
 # Tecnología de la Información
 ## Documento Tecnico
 

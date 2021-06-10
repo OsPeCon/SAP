@@ -1,30 +1,10 @@
-# Tecnología de la Información
-## Documento Conceptual
+# Titulo del tema
 
-**Título:** Titulo
+## Descripcion
 
-**Área de aplicación:**	Aplicacion
+## Detalle del proceso
 
-**Fecha:** 99/99/99
+### Casos / Preguntas frecuentes
 
-**Dirigida a:**	Dirigida a
+## Documentacion Técnica
 
-**CC.**	Con copia
-
-**Confeccionada por:** Analista
-
-***
-
-# Objetivo
-
-# Especificacion
-
-# Ejemplo con viñetas
-
-* Lista 1
-  * Lista 1.1
-  * Lista 1.2
-  * Lista 1.3
-* Lista 2
-  * Lista 2.1
-  * Lista 2.2
