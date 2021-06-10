@@ -1,13 +1,20 @@
-# Titulo del tema
+# Envío Automático de Mail de NC y ND
 
 ## Descripcion breve del proceso:
 Envío automático por mail a los prestadores, del detalle de Notas de Crédito y Notas de Débito propias tanto médicas como administrativas.
 Los adjuntos al mail serán los formularios de ND y NC y la hoja de detalle de débitos generada por Presmed.
 
+***
+***
 
-## Casos / Preguntas frecuentes
+## Proceso paso a paso:
+Indicar paso a paso del proceso con transacciones
 
+### Casos / Preguntas frecuentes
+Indicar los casos de error de usaurio o preguntas frecuentes que surgen 
 
+***
+***
 ## Documentacion Técnica
 
 **En Presmed:**
