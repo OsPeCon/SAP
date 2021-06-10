@@ -1,3 +1,13 @@
+---
+title: Vista expediente / orden de compra.
+date: Last Modified
+permalink: /Vista_Expediente_OC/
+eleventyNavigation:
+    key: vistaexoc
+    order: 3
+    title: Vista expediente / orden de compra.
+---
+
 # Tecnología de la Información
 ## Documento Tecnico
 
