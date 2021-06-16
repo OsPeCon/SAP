@@ -14,11 +14,15 @@ A) La emision de cheque puede ser manual: a partir de un documento de pago previ
 B) La emision de cheque puede ser automatica: 
 transaccion F110 que genera el docuemnto de pago y el cheque en forma automatica.
 
+Asiento contable: (Pago)  Proveedor "CT" 25 a Banco cheque emitido no entregado "CT" 50.
+
+
 2. Liberacion:
 
 explicar transacciones paso a paso.
 Transacion ZCHQ_N Para liberar.
 ZLIB Liberar Cheques Manualmente.
+Poner asiento contable
 
 3. Visualizacion:
 
@@ -37,3 +41,4 @@ En caso de que el cheque no tenga ni fecha ni (KY) se libera a travez de la tran
 
 **Liberacion:**
 
+Cargar documentos DOC tecnicos 1 y 2
