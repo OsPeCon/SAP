@@ -1,107 +1,91 @@
----
-title: Envio de Mail automatico.
-date: Last Modified
-permalink: /Mail_Nota_Debito_Credito/
-eleventyNavigation:
-    key: mailndnc
-    order: 2
-    title: Envio de Mail automatico.
----
+# Envío Automático de Mail de NC y ND
 
-# Titulo del tema
-
-## Descripcion
-
-## Detalle del proceso
-
-### Casos / Preguntas frecuentes
-
-## Documentacion Técnica
-
-# Tecnología de la Información
-## Documento Tecnico
-
-**Envío automático vía mail de notas de débito y credito propias** 
-
-**Área de aplicación:**	Cuentas a Pagar y Hospitales
-
-**Fecha:** 08/06/21
-
-**Dirigida a:**	Diego Tamargo, Luis Rodriguez, OScar Burgos, Esteban Lucano
-
-**CC.**	Tecnologia de la Informacion
-
-**Confeccionada por:** Mariela Etcheverry
+## Descripcion breve del proceso:
+Envío automático por mail a los prestadores, del detalle de Notas de Crédito y Notas de Débito propias tanto médicas como administrativas.
+Los adjuntos al mail serán los formularios de ND y NC y la hoja de detalle de débitos generada por Presmed.
 
 ***
+***
 
-# Objetivo
-Envio de 
+## Proceso paso a paso:
+Indicar paso a paso del proceso con transacciones
 
-# Especificacion
-•	FORMULARIO:  ZSF_DEB_CRED (smart form) 
-Emisión de notas de débito propias registradas en SAP: Clase de clases de documento son KB y KD.
+### Casos / Preguntas frecuentes
+Indicar los casos de error de usaurio o preguntas frecuentes que surgen 
 
-•	TRANSACCION: ZFI_ENVIO_ND ,,,,,,,
-PROGRAMA: ZFI_ENVIO_MAIL_DEB_CRED
+***
+***
+## Documentacion Técnica
+
+**En Presmed:**
+
+•	Generación y guardado de hoja resumen de débitos médicos y administrativos en el directorio: uocrafs/prodpresmed/expediente 
+
+•	Nombre del archivo: EXP_XXXXXXXX_Beneficiario.pdf (siendo XXXXXXXX el nro. de expediente generado en Presmed) 
+
+•	Actualización  la hoja resumen en función de la generación de débitos subsiguientes.
+
+•	Generación de hoja resumen por expediente “desde - hasta”.
+
+
+**En SAP:** 
+
+* TRANSACCION: ZFI_ENVIO_ND
+
+* PROGRAMA: ZFI_ENVIO_MAIL_DEB 
+(Transaccion de Impresión call transaction: ZNOPN en programa de envio que llama al smartform)
+
+* FORMULARIO:  ZSF_DEB_CRED2 (smart form) 
+Formulario de notas de débito y credito propias registradas en SAP: Clase de clases de documento son KB, KD y KG
+Configuración en SO10: el TEXTO “ZDETALLENOTA”, contiene el detalle que se imprime al pie del smartform de la ND o NC cuando se marca el pop up "observaciones" en el programa.
 
 Datos de selección del programa:
-* Nro. débito SAP:
-* Fecha de entrada:
-* Fecha de contabilización
-* Nro. legal factura
-* Nro. factura SAP 
-* Proveedor
+•	Nro. débito SAP:
+•	Fecha de entrada:
+•	Fecha de contabilización
+•	Nro. legal factura
+•	Nro. factura SAP 
+•	Proveedor
 
-Envío de mail con las notas de débito adjuntas, más la hoja resumen emitida desde presmed.
-1. Ejecución automática: diaria,  schedulleada para las 23 hs todos los días.
-2. Opción de Ejecución manual 
+El programa realiza envío de mail con las notas de débito y debito adjuntas, más la hoja resumen de detalle de debitos emitida desde presmed.
+
+-Ejecución automática: diaria,  schedulleada para las 23 hs todos los días.
+
+-Opción de Ejecución manual 
 La opción automática controlara la duplicidad del envío, no siendo así para la ejecución manual.
 
+EL programa realiza un control del usuario que envio el mail, si es LTAMARGO impide que se envie 2 veces. Si es otro usuario, es sin limite.
 
 
-Mail: 
-* Remitente:
-* Título: 
-* Cuerpo del mail: SO10, TEXTO “ZFI_MAIL_ND
+Configuración de Mail: 
+
+    Remitentes: 
+    1. noreply-hospitales@uocra.org y 
+    2. noreply-cuentasapagar@uocra.org
+
+    Título: xxxxxxxxx
+
+    Cuerpo del mail: TEXTO configurado en SO10,  “ZFI_MAIL_ND”
+
+    Observaciones: se imprime al pie del smartform de la ND o NC el texto de la SO10 “ZDETALLENOTA”
+
+VaLidaciones en Transaccion ZNOPN 
+
+    Códigos:
+    * 02: ND A
+    * 07: ND B
+    * 03: NC A
+    * 08: NC B
+
+Hoja Resumen Presmed:
+Si es NC NO tiene adjunto de hoja resumen
+
+Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\DEVPresmed\Expediente nombre archivo pdf EXP_0000332445
+Si lo encuentra, envía el mail y sino cancela el envio y avisa en el log.
 
 
 Tabla de control de envios realizados: 
-	
-Campos:
+ZCONTROL_MAIL
 
-NOMBRE CAMPO | Nombre Tecnico | 
----------|----------|
- Sociedad | BESEG BUKRS | 
- Nro. Documento | BESEG BELNR | 
- Referencia | BKPF XBLNR |
- Proveedor | BSEG LIFNR |
- Mail | programa | 
- Fecha de envio | programa |
- |             |
- 
- Usuario documento: usuario envio mail (si fue enviado por el programa schedulleado, que indique “AUTOMATICO”; sino que indique el usuario que ejecuto el programa en forma manual
+Transaccion de reporte envios: ZFI_ENVIO_ND_L
 
-
-OTROS: 
-* Creación de carpeta uocrafs/prodpresmed/expediente. OK
-* Alta en SAP transacción ZFI_ENVIO_ND en el rol simple:  RS9999_FI-AP_PRESMED
-* Alta Matriz
-* Alta Inventario Z
-* Schedulleo de Programa ZFI_ENVIO_MAIL_DEB_CRED
-
-
-
-
-
-
-
-# Ejemplo con viñetas
-
-* Lista 1
-  * Lista 1.1
-  * Lista 1.2
-  * Lista 1.3
-* Lista 2
-  * Lista 2.1
-  * Lista 2.2
