@@ -1,7 +1,7 @@
-# Preliminares Integracion y Ex SUR
+# Preliminares Integración y No Integración
 
-## Descripcion breve del proceso:
-Generacion automatica de los documentos prelimianres correspondientes a Integraciopn y ex sur.....
+## Descripción breve del proceso:
+Generación automatica de los documentos preliminares correspondientes a las facturas Integración y no Integración (ex sur)
 
 ***
 ***
@@ -25,10 +25,9 @@ Column A | Column B | Column C
 **En Presmed:**
 
 CARGA PRELIMINARES NO INTEGRACION:
-URL: http://saphanadev:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PrelimDosPoSet/
 URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PrelimDosPoSet/
 
-AUTORIZATIOn: 
+AUTORIZATION: 
 Basic Auth: Usuario y contraseña SAP. (Solo Para Metodo GET)
 
 HEADERS:
@@ -36,7 +35,7 @@ x-csrf-token = Generar token (Con Metodo GET)
 
 BODY:
 RAW
-JSON el formato: 
+formato (JSON): 
 ```json
 {"Bukrs": "0100",
  "Zzidexterna": "1600",
@@ -69,7 +68,7 @@ JSON el formato:
 * PROGRAMA: ZFI_ENVIO_MAIL_DEB 
 (Transaccion de Impresión call transaction: ZNOPN en programa de envio que llama al smartform)
 
-* FORMULARIO:  ZSF_DEB_CRED2 (smart form) 
+* FORMULARIO:  ZSF_DEB_CRED2 (Smartforms) 
 Formulario de notas de débito y credito propias registradas en SAP: Clase de clases de documento son KB, KD y KG
 Configuración en SO10: el TEXTO “ZDETALLENOTA”, contiene el detalle que se imprime al pie del smartform de la ND o NC cuando se marca el pop up "observaciones" en el programa.
 
@@ -114,7 +113,7 @@ VaLidaciones en Transaccion ZNOPN
 Hoja Resumen Presmed:
 Si es NC NO tiene adjunto de hoja resumen
 
-Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\DEVPresmed\Expediente nombre archivo pdf EXP_0000332445
+Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\ProdPresmed\Expediente nombre archivo pdf EXP_0000332445
 Si lo encuentra, envía el mail y sino cancela el envio y avisa en el log.
 
 
