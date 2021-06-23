@@ -22,10 +22,36 @@ En Sap se genero una tabla de LOG del Proceso. De mismo modo se creo para los pr
 
 URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PreliminaresSet/
 
+AUTORIZATION: 
+Basic Auth: Usuario y contraseña SAP. (Solo Para Metodo GET)
 
+HEADERS:
+x-csrf-token = Generar token (Con Metodo GET) 
 
-
-
+BODY:
+RAW
+formato (JSON): 
+```json
+{"Bukrs": "0100",
+ "Zzidexterna": "600",
+ "Blart": "KR",
+ "Bldat": "2021-03-28T00:00:00",
+ "Monat": "02",  
+ "Gjahr": "2021",
+ "Xblnr": "00001A12345678",
+ "Bktxt": "",
+ "Brnch": "0030",
+ "Ltext": "979",
+ "Zltext": "caf1d9af-7388-4fc2-9bc3-bef3c75f9673",
+ "Zzextension": "jpeg", 
+ "Newko": "1060",
+ "Wrbtr": "10.23",
+ "Zuonr": "00001A12345678",
+ "Sgtxt": "",
+ "Xref1": "",
+ "Xref2": "",
+ "Xref3": ""}
+```
 
 ***NO INTEGRACION:***
 
@@ -52,7 +78,7 @@ formato (JSON):
  "Xblnr": "00001A12345679",
  "Bktxt": "PEREZ RICARDO E - 2021.02",
  "Brnch": "",
- "Ltext": "\\Uocrafs\\DigitalizacionMesadeEntrada",
+ "Ltext": "1023",
  "Zltext": "d2a06550-187e-4fe3-9129-b2fea70b06e4",
  "Zzextension": "jpeg",  
  "Newko": "1060",
@@ -67,11 +93,31 @@ formato (JSON):
  "Zcemnue": "0006"}
 ```
 
+***BORRADO:***
+
+**Llamada JSON:**
+
+URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/BorrarPrelSet/
+
+AUTORIZATION: 
+Basic Auth: Usuario y contraseña SAP. (Solo Para Metodo GET)
+
+HEADERS:
+x-csrf-token = Generar token (Con Metodo GET) 
+
+BODY:
+RAW
+formato (JSON): 
+```json
+{"Bukrs": "0100",
+ "Belnr": "120006580"}
+```
+
 **En SAP:** 
 
-* TRANSACCION: ZFI_ENVIO_ND
+* TRANSACCION: -
 
-* PROGRAMA: ZFI_ENVIO_MAIL_DEB 
+* PROGRAMA: ZWS_PRELIMINARES 
 (Transaccion de Impresión call transaction: ZNOPN en programa de envio que llama al smartform)
 
 * FORMULARIO:  ZSF_DEB_CRED2 (Smartforms) 
