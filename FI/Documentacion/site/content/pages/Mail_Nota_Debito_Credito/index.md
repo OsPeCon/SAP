@@ -48,7 +48,7 @@ No existen casos a la fecha
 
 •	Generación y guardado de hoja resumen de débitos médicos y administrativos en el directorio: uocrafs/prodpresmed/expediente 
 
-•	Nombre del archivo: EXP_XXXXXXXX_Beneficiario.pdf (siendo XXXXXXXX el nro. de expediente generado en Presmed) 
+•	Nombre del archivo: EXP_XXXXXXXXXX.pdf (siendo XXXXXXXX el nro. de expediente generado en Presmed) 
 
 •	Actualización  la hoja resumen en función de la generación de débitos subsiguientes.
 
@@ -90,7 +90,7 @@ Configuración de Mail:
     1. noreply-hospitales@uocra.org y 
     2. noreply-cuentasapagar@uocra.org
 
-    Título: xxxxxxxxx
+    Título: Tipo Documento+Numero sapDoc. (Ej. Débito Médico Nº 0002A00037014)
 
     Cuerpo del mail: TEXTO configurado en SO10,  “ZFI_MAIL_ND”
 
