@@ -7,9 +7,7 @@ Generación automatica de los documentos preliminares correspondientes a las fac
 ***
 
 ## Proceso paso a paso:
-Indicar paso a paso del proceso con transacciones
-
-
+Los documentos se cargan/borran en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
 ### Casos / Preguntas frecuentes
 
 
@@ -22,7 +20,7 @@ Column A | Column B | Column C
 ***
 ## Documentacion Técnica
 
-**En Presmed:**
+**Llamada JSON:**
 
 CARGA PRELIMINARES NO INTEGRACION:
 URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PrelimDosPoSet/
@@ -113,7 +111,7 @@ VaLidaciones en Transaccion ZNOPN
 Hoja Resumen Presmed:
 Si es NC NO tiene adjunto de hoja resumen
 
-Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\ProdPresmed\Expediente nombre archivo pdf EXP_0000332445
+Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\ProdPresmed\EXP_NROEXPEDIENTE.pdf (EXP_0000332445.pdf)
 Si lo encuentra, envía el mail y sino cancela el envio y avisa en el log.
 
 
