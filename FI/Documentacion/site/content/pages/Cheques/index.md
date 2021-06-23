@@ -1,7 +1,7 @@
 # Cheques: Generación, Visualización, liberación
 
 ## Descripción breve del proceso:
-Los cheques siempre se emiten como emitidos no entregrados y luego pasan a ser liberados a la espera de la conciliacion bancaria..
+Los cheques siempre se emiten como emitidos no entregrados y luego pasan a ser liberados a la espera de la conciliacion bancaria.
 
 ***
 ***
