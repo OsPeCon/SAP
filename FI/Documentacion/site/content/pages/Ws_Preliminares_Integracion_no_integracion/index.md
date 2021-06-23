@@ -7,7 +7,8 @@ Generación automatica de los documentos preliminares correspondientes a las fac
 ***
 
 ## Proceso paso a paso:
-Los documentos se cargan/borran en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
+Los documentos se cargan en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar).
+De mismo modo  en forma de documento Preliminar. 
 ### Casos / Preguntas frecuentes
 
 
