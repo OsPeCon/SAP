@@ -7,23 +7,30 @@ Generación automatica de los documentos preliminares correspondientes a las fac
 ***
 
 ## Proceso paso a paso:
-Los documentos se cargan en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar).
-De mismo modo  en forma de documento Preliminar. 
+Los documentos se cargan en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
 ### Casos / Preguntas frecuentes
 
-
-Column A | Column B | Column C
----------|----------|---------
- dddddddddddd | B1 | C1
- A2 |ddd | C2
- A3 | B3 | C3
+Los errores en la app externa solo muestran un cartel de null (en proceso de identificacion de error).
+En Sap se genero una tabla de LOG del Proceso. De mismo modo se creo para los preliminares borrados. 
 ***
 ***
 ## Documentacion Técnica
 
+***INTEGRACION:***
+
 **Llamada JSON:**
 
-CARGA PRELIMINARES NO INTEGRACION:
+URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PreliminaresSet/
+
+
+
+
+
+
+***NO INTEGRACION:***
+
+**Llamada JSON:**
+
 URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PrelimDosPoSet/
 
 AUTORIZATION: 
