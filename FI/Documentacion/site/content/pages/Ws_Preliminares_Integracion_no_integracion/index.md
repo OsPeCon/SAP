@@ -1,7 +1,7 @@
 # Preliminares Integración y No Integración
 
 ## Descripción breve del proceso:
-Generación automatica de los documentos preliminares correspondientes a las facturas Integración y no Integración (ex sur)
+Generación automática de los documentos preliminares correspondientes a las facturas Integración y no Integración (ex sur)
 
 ***
 ***
@@ -10,7 +10,7 @@ Generación automatica de los documentos preliminares correspondientes a las fac
 Los documentos se cargan en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
 ### Casos / Preguntas frecuentes
 
-Los errores en la app externa solo muestran un cartel de null (en proceso de identificacion de error).
+Los errores en la app externa solo muestran un cartel de 'null' (en proceso de identificacion de error).
 En Sap se genero una tabla de LOG del Proceso. De mismo modo se creo para los preliminares borrados. 
 ***
 ***
@@ -118,7 +118,7 @@ formato (JSON):
 * TRANSACCION: -
 
 * PROGRAMA: ZWS_PRELIMINARES 
-(Transaccion de Impresión call transaction: ZNOPN en programa de envio que llama al smartform)
+(Transaccion que recibe los JSON utilizando la tabla )
 
 * FORMULARIO:  ZSF_DEB_CRED2 (Smartforms) 
 Formulario de notas de débito y credito propias registradas en SAP: Clase de clases de documento son KB, KD y KG
