@@ -10,13 +10,13 @@ Los cheques siempre se emiten como emitidos no entregrados y luego pasan a ser l
 
 1. Emisión de cheques: 
 
-A) La emisión de cheque puede ser manual:
+* La emisión de cheque puede ser manual:
 
 A partir de un documento de pago previamente contabilizado, se emite por la transaccion F-58. 
 
 FCH5 A través de esta transacción se puede asignar el cheque.
 
-B) La emisión de cheque puede ser automática:
+* La emisión de cheque puede ser automática:
 
 Transaccion F110 que genera el documento de pago y el cheque en forma automatica.
 
@@ -37,9 +37,11 @@ Asiento contable: (Liberacion) cheque liberado "CT" 50 a Banco cheque emitido no
 
 3. Visualización:
 
-TRX.FCH1: visualiza cheques.
-TRX.FB03: visualiza documentos.
-TRX.ZQCH_2: Permite emitir un listado de cheque.
+* TRX.FCH1: visualiza cheques.
+
+* TRX.FB03: visualiza documentos.
+
+* TRX.ZQCH_2: Permite emitir un listado de cheque.
 
 
 ### Casos / Preguntas frecuentes
