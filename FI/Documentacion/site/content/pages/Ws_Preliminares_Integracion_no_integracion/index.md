@@ -127,10 +127,10 @@ formato (JSON):
 -Opción de Ejecución Manual 
 Ingresansando los datos del JSON, permite cargar un preliminar.
 
-Módulo de Funciones:
- * Z_BAPI_PREL (Integración)
- * Z_BAPI_PREL_2POS (No Integración)
- * Z_BAPI_BORR_PREL (Borrado)
+ * MODULO DE FUNCIONES:
+    * Z_BAPI_PREL (Integración)
+    * Z_BAPI_PREL_2POS (No Integración)
+    * Z_BAPI_BORR_PREL (Borrado)
 
 Tabla de control de Preliminares: 
 ZWS_PREL_LOG
