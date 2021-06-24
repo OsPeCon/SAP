@@ -7,10 +7,15 @@ Generación automática de los documentos preliminares correspondientes a las fa
 ***
 
 ## Proceso paso a paso:
-Los documentos se cargan en una app externa, el cual a través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
+Es un proceso transparente para el usuario, al aprobar en la web de prestadores, genera la registracion del documento preliminar.
+A través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  programa zws_borraprel para borrar) en forma de documento Preliminar. 
 ### Casos / Preguntas frecuentes
 
 Los errores en la app externa solo muestran un cartel de 'null' (en proceso de identificacion de error).
+Log en SAP:
+*   No Procesado - Error Centro Costo no encontrado: Verificar en la tabla zrelceco si exiten los datos.
+* No Procesado - El acreedor XXXXX 0100 no existe: El prestador no tiene cargado todos sus datos maestros.
+
 ***
 ***
 ## Documentación Técnica
