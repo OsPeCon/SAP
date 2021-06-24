@@ -132,5 +132,8 @@ Módulo de Funciones:
  * Z_BAPI_PREL_2POS (No Integración)
  * Z_BAPI_BORR_PREL (Borrado)
 
+Tabla de control de Preliminares: 
+ZWS_PREL_LOG
+
 Tabla de control de Borrado de Preliminares: 
 ZWS_BORR_LOG
