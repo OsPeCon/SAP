@@ -11,10 +11,9 @@ Los documentos se cargan en una app externa, el cual a través de JSON ingresan 
 ### Casos / Preguntas frecuentes
 
 Los errores en la app externa solo muestran un cartel de 'null' (en proceso de identificacion de error).
-En Sap se genero una tabla de LOG del Proceso. De mismo modo se creo para los preliminares borrados. 
 ***
 ***
-## Documentacion Técnica
+## Documentación Técnica
 
 ***INTEGRACION:***
 
@@ -23,7 +22,7 @@ En Sap se genero una tabla de LOG del Proceso. De mismo modo se creo para los pr
 URL: http://saphanaprod:8000/sap/opu/odata/sap/ZAPI_PRELIMINARES_SRV/PreliminaresSet/
 
 AUTORIZATION: 
-Basic Auth: Usuario y contraseña SAP. (Solo Para Metodo GET)
+Basic Auth: Usuario y contraseña SAP. (Solo Para Método GET)
 
 HEADERS:
 x-csrf-token = Generar token (Con Metodo GET) 
@@ -118,59 +117,20 @@ formato (JSON):
 * TRANSACCION: -
 
 * PROGRAMA: ZWS_PRELIMINARES 
-(Transaccion que recibe los JSON utilizando la tabla )
+(Recibe los JSON tanto para integracion/no integracion utilizando la tabla zws_preliminar)
 
-* FORMULARIO:  ZSF_DEB_CRED2 (Smartforms) 
-Formulario de notas de débito y credito propias registradas en SAP: Clase de clases de documento son KB, KD y KG
-Configuración en SO10: el TEXTO “ZDETALLENOTA”, contiene el detalle que se imprime al pie del smartform de la ND o NC cuando se marca el pop up "observaciones" en el programa.
+* PROGRAMA: ZWS_BORRARPREL 
+(Recibe los JSON utilizando la tabla zws_borrarprel)
 
-Datos de selección del programa:
-•	Nro. débito SAP:
-•	Fecha de entrada:
-•	Fecha de contabilización
-•	Nro. legal factura
-•	Nro. factura SAP 
-•	Proveedor
-
-El programa realiza envío de mail con las notas de débito y debito adjuntas, más la hoja resumen de detalle de debitos emitida desde presmed.
-
--Ejecución automática: diaria,  schedulleada para las 23 hs todos los días.
+-Ejecución online.
 
 -Opción de Ejecución manual 
-La opción automática controlara la duplicidad del envío, no siendo así para la ejecución manual.
+Ingresansando los datos del JSON, podes cargar un preliminar.
 
-EL programa realiza un control del usuario que envio el mail, si es LTAMARGO impide que se envie 2 veces. Si es otro usuario, es sin limite.
+Módulo de Funciones:
+ * Z_BAPI_PREL (Integración)
+ * Z_BAPI_PREL_2POS (No Integración)
+ * Z_BAPI_BORR_PREL (Borrado)
 
-
-Configuración de Mail: 
-
-    Remitentes: 
-    1. noreply-hospitales@uocra.org y 
-    2. noreply-cuentasapagar@uocra.org
-
-    Título: xxxxxxxxx
-
-    Cuerpo del mail: TEXTO configurado en SO10,  “ZFI_MAIL_ND”
-
-    Observaciones: se imprime al pie del smartform de la ND o NC el texto de la SO10 “ZDETALLENOTA”
-
-VaLidaciones en Transaccion ZNOPN 
-
-    Códigos:
-    * 02: ND A
-    * 07: ND B
-    * 03: NC A
-    * 08: NC B
-
-Hoja Resumen Presmed:
-Si es NC NO tiene adjunto de hoja resumen
-
-Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\ProdPresmed\EXP_NROEXPEDIENTE.pdf (EXP_0000332445.pdf)
-Si lo encuentra, envía el mail y sino cancela el envio y avisa en el log.
-
-
-Tabla de control de envios realizados: 
-ZCONTROL_MAIL
-
-Transaccion de reporte envios: ZFI_ENVIO_ND_L
-
+Tabla de control de Borrado de Preliminares: 
+ZWS_BORR_LOG
