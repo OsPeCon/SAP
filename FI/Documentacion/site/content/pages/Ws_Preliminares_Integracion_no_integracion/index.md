@@ -122,10 +122,10 @@ formato (JSON):
 * PROGRAMA: ZWS_BORRARPREL 
 (Recibe los JSON utilizando la tabla zws_borrarprel)
 
--Ejecución online.
+-Ejecución Online.
 
--Opción de Ejecución manual 
-Ingresansando los datos del JSON, podes cargar un preliminar.
+-Opción de Ejecución Manual 
+Ingresansando los datos del JSON, permite cargar un preliminar.
 
 Módulo de Funciones:
  * Z_BAPI_PREL (Integración)
