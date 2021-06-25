@@ -12,6 +12,7 @@ A través de JSON ingresan a SAP (Programa zws_preliminares para cargar y  progr
 ### Casos / Preguntas frecuentes
 
 Los errores en la app externa solo muestran un cartel de 'null' (en proceso de identificacion de error).
+
 Log en SAP:
 *   No Procesado - Error Centro Costo no encontrado: Verificar en la tabla zrelceco si exiten los datos.
 * No Procesado - El acreedor XXXXX 0100 no existe: El prestador no tiene cargado todos sus datos maestros.
