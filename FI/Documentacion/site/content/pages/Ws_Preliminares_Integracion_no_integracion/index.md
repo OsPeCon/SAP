@@ -131,7 +131,7 @@ formato (JSON):
 -Ejecución Online.
 
 -Opción de Ejecución Manual 
-Ingresansando los datos del JSON, permite cargar un preliminar.
+Ingresansando los datos del JSON, permite generar un preliminar.
 
  * MODULO DE FUNCIONES:
     * Z_BAPI_PREL (Integración)
