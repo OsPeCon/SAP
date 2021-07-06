@@ -1,17 +1,24 @@
-# Tecnología de la Información
-## Documento ConceptualTecnico
+# Validacion Expediente Ape via WS
 
-**Título:** Validacion Expediente Ape via WS
 
-**Área de aplicación:**	MM
+Programa (Web Service)  que valida  los nros. de expedientes cargados en una OC.
 
-**Fecha:** 05/06/2021
+Cómo funciona? SAP toma el expediente cargado en el campo “nro. Necesidad” al cargar una OC en la ME21 o modificarla en la ME22; y va a buscarlo al Centro Autorizador para validarlo
+ 
+Estos son los mensajes que emitirá dicho control (por favor leer el mensaje para  asegurarse de que el mismo es correcto y dar “enter”)
 
-**Dirigida a:**	
 
-**CC.**	
+* Expediente de materiales existe aprobado
 
-**Confeccionada por:** Leonardo Ruseff
+* Expediente de materiales existe rechazado
+* Expediente de materiales existe pendiente
+
+* Expediente existe pero no corresponde a materiales
+* Expediente inexistente
+
+*  Error en la comunicación.
+  
+* Debe ingresar expediente (Este mensaje aparece en rojo por mayor control, pero NO ES UN ERROR, sino que es una advertencia para que el usuario verifique realmente si no corresponde ingresar un nro de expediente).
 
 ***
 
