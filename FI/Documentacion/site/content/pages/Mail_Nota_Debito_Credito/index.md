@@ -23,6 +23,7 @@ Datos de selección del programa:
 * Fecha de facturacion: fecha de la factura
 * Factura: nro. SAP de factura
 * Observaciones: si se tilda este campo, se imprimira al pie del formulario de la ND el texto determinado en la configuracion.
+* Resumen Expediente Presmed: Indicar si el debito sap se envia con o sin la hoja resumen de presmed.
 
 Los mails se enviaran desde las siguientes casillas de correo: 
 - Para Sucursal 0004: noreply-hospitales@uocra.org 
