@@ -84,13 +84,13 @@ El programa realiza envío de mail con las notas de débito y debito adjuntas, m
 Hospitales KD-KB-KG (Hospitales Viernes):
 Solo se envia el dia viernes toda la semana de debitos/creditos generados al grupo de cuentas 0004.
 
-KD DEBITO ADM (Cuentas a pagar -10): Se envia 10 dias posteriores al registro de los documentos KD al grupo de cuentas 0004 (Exepto prestador 5880).
+KD DEBITO ADM (Cuentas a pagar -10): Se envian 10 dias posteriores al registro de los documentos KD del grupo de cuentas 0002 (Exepto prestador 5880).
 KD DEBITO ADM2 (Cuentas a pagar Sin Hoja -10)
-Doc. KD sin hoja de servicio: al grupo de cuentas 0004 (Solo prestador 5880).
+Doc. KD sin hoja de servicio del grupo de cuentas 0002 (Solo prestador 5880).
 KB DEBITO MED (Cuentas a pagar -3)
-KB: Doc. KB se envian 3 dias posteriores al registro del grupo de cuentas 0004.
+KB: Doc. KB se envian 3 dias posteriores al registro del grupo de cuentas 0002.
 KG Credito (Cuentas a pagar Diario)
-KG: Todos los dias.
+Los Doc. KG del grupo de cuentas 0002 se envian todos los dias.
 
 -Opción de Ejecución manual 
 La opción automática controlara la duplicidad del envío, no siendo así para la ejecución manual.
