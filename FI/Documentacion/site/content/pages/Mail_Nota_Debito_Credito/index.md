@@ -79,10 +79,23 @@ El programa realiza envío de mail con las notas de débito y debito adjuntas, m
 
 -Ejecución automática: diaria,  schedulleada para las 23 hs todos los días.
 
+-Variantes:
+
+Hospitales KD-KB-KG (Hospitales Viernes):
+Solo se envia el dia viernes toda la semana de debitos/creditos generados al grupo de cuentas 0004.
+
+KD DEBITO ADM (Cuentas a pagar -10): Se envia 10 dias posteriores al registro de los documentos KD al grupo de cuentas 0004 (Exepto prestador 5880).
+KD DEBITO ADM2 (Cuentas a pagar Sin Hoja -10)
+Doc. KD sin hoja de servicio: al grupo de cuentas 0004 (Solo prestador 5880).
+KB DEBITO MED (Cuentas a pagar -3)
+KB: Doc. KB se envian 3 dias posteriores al registro del grupo de cuentas 0004.
+KG Credito (Cuentas a pagar Diario)
+KG: Todos los dias.
+
 -Opción de Ejecución manual 
 La opción automática controlara la duplicidad del envío, no siendo así para la ejecución manual.
 
-EL programa realiza un control del usuario que envio el mail, si es LTAMARGO impide que se envie 2 veces. Si es otro usuario, es sin limite.
+EL programa realiza un control del usuario que envio el mail, si es LTAMARGO1 impide que se envie 2 veces. Si es otro usuario, es sin limite.
 
 
 Configuración de Mail: 
