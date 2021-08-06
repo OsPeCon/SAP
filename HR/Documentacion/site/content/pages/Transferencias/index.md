@@ -2,20 +2,21 @@
 
 
 ## Descripcion breve del proceso:
-Envío automático por mail a los prestadores, del detalle de Notas de Crédito y Notas de Débito propias tanto médicas como administrativas.
-Los adjuntos al mail serán los formularios de ND y NC y la hoja de detalle de débitos generada por Presmed.
+Proceso de generacion de archivos para enviar a bancos con el objetivo de pagar sueldos a traves de transferencias bancarias. Cada banco tiene su propio tipo de archivo.
 
 ***
 ***
 
 ## Proceso paso a paso:
-Si bien la transaccion de envio de mail con los adjuntos se ejecuta en forma automatica todos los dias, existe la forma de que el usuario la ejecute en forma manual, la cual se explica a continuacion:
+El proceso de transferencias para pago de sueldos tiene  2 pasos , el primero genera el pago en el legajo del empleado segun su liquidacion de sueldo , esto puede ser total o parcial , el segundo paso es la generacion de los distintos archivos tipo txt para enviar a los bancos.
 
 ENVIO MANUAL POR EL USUARIO:
 
-**TRANSACCION: ZFI_ENVIO_ND**
+**Metodologia para transferencias**
 
-Datos de selección del programa: 
+Generar las transferencias
+*Transacción  PC00_M29_CDTA / PC00_M29_CDTB: 
+Generación  para todas las sociedades , no es necesario seleccionar legajos , la selección se hará en el próximo paso
 * Sociedad: 0100
 * Nº Nota D/C: indicar el nro de debito o credito por el que va a enviarse el mail
 * Proveedor: indicar el proveedor
