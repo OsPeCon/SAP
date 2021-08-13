@@ -4,7 +4,7 @@ date: Last Modified
 permalink: /Expediente_Validacion/
 eleventyNavigation:
     key: expediente
-    order: 10
+    order: 20
     title: Validacion de Expediente FI.
 ---
 

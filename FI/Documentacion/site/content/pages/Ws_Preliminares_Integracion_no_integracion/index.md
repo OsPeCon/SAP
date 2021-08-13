@@ -1,3 +1,13 @@
+---
+title:Preliminares Integración y No Integración.
+date: Last Modified
+permalink: /Ws_Preliminares_Integracion_no_integracion/
+eleventyNavigation:
+    key: preliminares
+    order: 60
+    title: Preliminares Integración y No Integración.
+---
+
 # Preliminares Integración y No Integración
 
 ## Descripción breve del proceso:
