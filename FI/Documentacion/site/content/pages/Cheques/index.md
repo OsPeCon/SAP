@@ -1,3 +1,13 @@
+---
+title: Cheques.
+date: Last Modified
+permalink: /Cheques/
+eleventyNavigation:
+    key: cheques
+    order: 10
+    title: Cheques.
+---
+
 # Cheques: Generación, Visualización, liberación
 
 ## Descripción breve del proceso:

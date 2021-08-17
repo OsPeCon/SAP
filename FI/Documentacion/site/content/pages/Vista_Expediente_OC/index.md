@@ -4,7 +4,7 @@ date: Last Modified
 permalink: /Vista_Expediente_OC/
 eleventyNavigation:
     key: vistaexoc
-    order: 3
+    order: 50
     title: Vista expediente / orden de compra.
 ---
 
