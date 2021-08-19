@@ -1,5 +1,5 @@
 ---
-title:Preliminares Integración y No Integración.
+title: Preliminares Integración y No Integración.
 date: Last Modified
 permalink: /Ws_Preliminares_Integracion_no_integracion/
 eleventyNavigation:
