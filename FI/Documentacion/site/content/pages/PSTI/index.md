@@ -4,7 +4,6 @@
 
 Emision , Impresion y envio de facturacion.
 
-
 ## Proceso paso a paso:
 
 1. Listado de Bajas: Trx. ZFI_BAJAS. Se informan los adherentes con 2 o más facturas vencidas. En el caso que sean 2, solo informa en el listado y en el caso que sean 3 además de informar realiza el bloqueo de dicho adherente.![img](image/index/1628705225985.png)
@@ -29,15 +28,11 @@ La trx. zfi_adh_mail permite el envió
 de mail a los adherentes que poseen el mismo cargado o bien imprimir la factura
 a los que no lo poseen.
 
-
-
 ## **Casos / Preguntas frecuentes**
 
 Caso 1:
 
-
 Caso 2:
-
 
 ---
 
