@@ -1,3 +1,13 @@
+---
+title: Transferencias.
+date: Last Modified
+permalink: /Transferencias/
+eleventyNavigation:
+    key: transf
+    order: 5
+    title: Transferencias.
+---
+
 # Transferencias Sueldos
 
 
