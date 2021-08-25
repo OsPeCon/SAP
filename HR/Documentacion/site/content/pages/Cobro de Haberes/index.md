@@ -1,8 +1,8 @@
-# Transferencias Sueldos
+# Cobro de Haberes - Transferencias 
 
 
 ## Descripcion breve del proceso:
-Proceso de pago de sueldos y  generacion de archivos para enviar a bancos con el objetivo de realizar las transferencias bancarias correposndientes . Cada banco tiene su propio tipo de archivo por eso se generan con distintos formatos .
+Proceso de pago de sueldos y  generacion de archivos para enviar a bancos con el objetivo de realizar las transferencias bancarias correposndientes . Cada banco tiene su propio tipo de archivo para transferencias propias y hacia otros bancos por lo cual se generan archivos con distintos formatos para subir a los home banking .
 
 ***
 ***
@@ -15,15 +15,18 @@ Todas las sociedades tienen cuenta en Banco La Pampa , siendo este banco el prin
 Los empleados de cada Sociedad reciben los depositos desde las cuentas de la sociedad para la que trabajan. Si el empleado tiene cuenta en alguno de los bancos de la sociedad se realiza una transferencia directa desde el mismo banco , caso contrario se transfiere desde Banco La Pampa.
         
 
+
 **Metodologia para transferencias**
 
-Generar las transferencias
+
+**Generar las transferencias**
 * Transacción  PC00_M29_CDTA / PC00_M29_CDTB
 
-La Primera de ellas genera la transferencia por el total del sueldo , la segunda genera un pago parcial que previamente sera ingresado en el legajo con su importe correspondiente
+    La Primera de ellas genera la transferencia por el total del sueldo , la segunda genera un pago parcial que previamente sera ingresado en el legajo con su importe correspondiente
 Se generan todas las sociedades juntas  , no es necesario seleccionar legajos , la selección se hará en el próximo paso
 
-Armado del Txt 
+**Armado del Txt**
+
 * Transacción PC00_M29_FFOT
 
     Se generaron las siguientes variantes que abarcarían el total de las transferencias a realizar . 
