@@ -1,3 +1,13 @@
+---
+title: Mail Nota de Debito / Credito.
+date: Last Modified
+permalink: /Mail_Nota_Debito_Credito/
+eleventyNavigation:
+    key: mailnotas
+    order: 30
+    title: Mail Nota de Debito / Credito.
+---
+
 # Envío Automático de Mail de NC y ND
 
 ## Descripcion breve del proceso:
