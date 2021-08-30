@@ -8,8 +8,8 @@ eleventyNavigation:
     title: Validacion de Expediente FI.
 ---
 
-# Tecnología de la Información
-## Documento ConceptualTecnico
+## Tecnología de la Información
+### Documento ConceptualTecnico
 
 **Título:** Validacion Expediente Ape via WS
 
@@ -41,5 +41,5 @@ Funcion: ZWS_CONSULTA_EXPEDIENTE
 Destination: ZCONSULTA_EXPEDIENTE
 
 # Programa
-![Prueba](images/Standard_01.png)
+![Mi Imagen](images/Standard_01.png)
 ![Prueba](images/Standard_02.png)

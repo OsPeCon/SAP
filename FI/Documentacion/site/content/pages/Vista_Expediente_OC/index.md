@@ -33,7 +33,12 @@ Prorama SAP: ZDATA_EXPEDIENTE_OC
 
 Vista generada: ZDEXPEDIENTE
 
-Vista en SQL: Unet20.dbo. SAP_Expediente_OC
+Vista en SQL UNET20.Dpx.dbo.SAP_Expediente_OC con los campos solicitados
+
+Definicion de la vista
+SELECT        *
+FROM            OPENQUERY(HANASAP, 'Select * From SAPABAP1.ZDEXPEDIENTE a ') AS derivedtbl_1
+
 
 # Notas
 La ejecución del programa que la alimenta está programada en forma diaria a las 23:59 hs.

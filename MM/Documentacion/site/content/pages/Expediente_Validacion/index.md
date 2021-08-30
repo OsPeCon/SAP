@@ -37,5 +37,32 @@ Funcion: ZWS_CONSULTA_EXPEDIENTE_OC
 
 Destination: 'ZCONSULTA_EXPEDIENTE_OC'
 
+Formato de la devolución del método http://localhost/DigitalizacionExpedientes/odata/Traer(pIdExpediente=5476791), al que le agregamos el Estado del expediente.
+
+Valores Posibles
+N= Rechazado
+P=Pendiente
+S=Aprobado
+
+ "value": [
+        {
+            "TipoPed": 3,
+            "Seccional": "0001",
+            "EventoId": 39,
+            "ObraSocial": "MON",
+            "Cuil": 20119989575,
+            "HisCli": 11998957,
+            "Nombre": "ARATTA NESTOR ADOLFO",
+            "Patologia": 0,
+            "DenoPatologia": "SIN PATOLOGIA SUR",
+            "Sur": 0,
+            "TramiteId": 0,
+            "DenoTipoPed": "PRACTICAS MEDICAS             ",
+            "DenoSeccional": "NODO CABALLITO                ",
+            "DenoEvento": "RECHAZO MEDICO FORMAL                             ",
+            "Programado": "",
+            "Estado": "N"
+        }
+    ]
 
 
