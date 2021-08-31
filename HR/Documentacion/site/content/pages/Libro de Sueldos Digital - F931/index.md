@@ -20,26 +20,149 @@ forma mensual la liquidación de los sueldos en la AFIP.
 
 **Metodologia** 
 
-**Generar**
-
 Transacción  :   PC00_M29_CLSD
 
-Datos a integrar:
+Datos a ingresar:
 
-Código de la
-AFIP para LSD: se seleccionará el equivalente del mismo para el detalle de la
+Código de la AFIP para LSD: se seleccionará el equivalente del mismo para el detalle de la
 
-Código nómina
-de SAP que  figura en la pantalla y de
-deberá tildar los  casilleros que correspondan de los distintos conceptos.
+Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casilleros que correspondan de los distintos conceptos.
 
 El sistema muestra lasiguiente pantalla:
 
 ![img](image/index/1630424321657.png)
 
 
-* **Armado del Txt**
-*
+Datos a integrar:
+
+Código de la AFIP para LSD: se seleccionará el equivalente del mismo para el detalle de la
+
+Código nómina de SAP que  figura en la pantalla y de deberá tildar los                                                 casilleros
+que correspondan de los distintos conceptos
+
+Una vez que se termina de trabajar asociando códigos de AFIP con nóminas propias y verificado
+que no hay errores, marcando la línea correspondiente y luego dar un clic en el
+icono “verificar entradas” como se muestra en la siguiente pantalla:
+
+![img](image/index/1630432400509.png)
+
+
+Si no hay errores para ir guardando la información se deberá dar un clic en el ícono de Generar TXT de acuerdo a lo
+siguiente:
+
+![](file:///C:\Users\mprager\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)![](image/index/1630432478029.png)
+
+
+1 - A continuación se procederá a guardar el mismo:
+![img](image/index/1630432503637.png)
+
+Cuando se retoma la tarea para seguir asociando nóminas de AFIP con las propias se deberá
+dar clic en el ícono “Cargar TXT” de acuerdo a la siguiente pantalla
+
+![](image/index/1630432535758.png)
+
+Se deberá colocar l nombre del archivo que se guardó la información ya creada y el
+sistema mostrará la pantalla con los datos incorporados anteriormente de
+acuerdo a lo siguiente:
+
+![](image/index/1630432556419.png)
+
+
+Luego de incorporada nueva información y para
+guardar la misma se deberá proceder de acuerdo a lo detallado en el
+punto 1.
+
+Esta asociación de las nóminas es muy importante y se deberá prestar especial
+atención en hacer una correcta equivalencia para evitar errores al procesar la
+información en el aplicativo de la AFIP para generar en forma correcta el
+archivo de la Seguridad Social y efectuar el pago de aportes y contribuciones.
+
+
+Detalle del proceso: 
+
+Para la emisión del Libro Digital se efectuará en forma mensual este proceso en donde
+se detallan los distintos conceptos liquidados a los empleados
+
+Transacción SAP: PC00_M29_F931
+
+Mostrará lasiguiente pantalla que a título de ejemplo es el proceso de un empleado:
+
+![](image/index/1630432596580.png)
+
+Al ejecutar la misma muestra la siguiente información en donde se detalla
+que la persona ha sido procesada en forma correcta:
+
+![](image/index/1630432616231.png)![](image/index/1630432616231.png)
+
+Al abrir el detalle de los distintos conceptos el sistema muestra la
+siguiente información
+
+
+
+En el Reg 1 “Datos referenciales del envío” Nro. De CUIT del empleador
+
+En el Reg 2  “Datos de la liquidación”
+muestra los datos del empleado de acuerdo a la siguiente información:
+
+![](image/index/1630432657633.png)
+
+Al dar clic
+en Registro 3 “Detalle de los conceptos” muestra el detalle la liquidación como
+se muestra a continuación:
+
+![](image/index/1630432678100.png)![](image/index/1630432678100.png)
+
+
+Al dar clic en Regi 4 “Datos del trabajador” el sistema muestra la
+siguiente información:
+
+![](image/index/1630432694990.png)
+
+Esto es el detalle de la liquidación efectuada a un empleado en sus
+distitntos conceptos y que fue procesada en forma correcta al ejecutar esta
+transacción.
+
+Para procesar
+el archivo y subirlo a la AFIP se deberá:
+
+![](image/index/1630432734310.png)
+
+Si está todo correcto se debe dar clic en Archvio Temse y el sistema
+muestra la siguiente pantalla:
+
+![](image/index/1630432749083.png)![](image/index/1630432749083.png)
+
+Se deberá dar clic en la lupa y el sistema mostrará la siguiente
+información:
+
+![](image/index/1630432773888.png)
+
+
+Hacer
+el Download para guardar el archivo y subirlo a la AFIP.
+
+Dentro del módulo de Liquidaciones y DDJJ se deben cumplir los
+siguientes procesos:
+
+- Cargar Liquidación
+- Validar la Liquidación
+- Aceptar la liquidación
+- Generar Libro de sueldos
+- Presentar la Declaración Jurada
+  F931
+
+Documentación Técnica:
+
+Nota SAP 2770358
+
+Manual SAP Nota 2770358
+
+Manual Libro de Sueldos Digital  de
+la AFIP
+
+Manual de Libro Digital de empresa especializada en HR
+
+
 
 ### Casos / Preguntas frecuentes
 
@@ -53,30 +176,5 @@ No existen casos a la fecha
 
 **En SAP:**
 
-* TRANSACCION: PC00_M29_CDTA - Transferencia Total de la remuneracion
-* TRANSACCION: PC00_M29_CDTB - Transferencia anticipio de la remuneracion
-* TRANSACCION: PC00_M29_FFOT - Armado del txt
-
-Los programas de transferencias generan un registro en la tabla REGUH , en este registro se incluyen datos como fecha de transferencia , código de característica ( número de generación ) y código de banco propio desde donde va a salir el dinero , datos del banco del empleado e importe a pagar.
-EL programa del armado del txt para el banco , selecciona según fecha , característica , código de banco propio y formato ( esto según el banco propio lo podemos deducir )  , con eso genera el archivo correspondiente
-
-* TRANSACCION: PC00_M29_CDTA
-
-  Datos a ingresar:
-
-  ```
-    Area de nomina 
-    Periodo de pago
-    Seleccion de numeros de legajos
-    Fecha de ejecucion requerida de transferencia
-  ```
-* TRANSACCION: PC00_M29_FFOT
-
-  Datos a ingresar:
-
-  ```
-    Fecha
-    Codigo de caracteristica ( generado en proceso anterior)
-    Elegir variante segun transferencia a realizar
-    Descargar el txt generado
-  ```
+* TRANSACCION: PC00_M29_CLSD - Asignacion de nominas a conceptos
+* TRANSACCION: PC00_M29_F931 - Generacion de Libro Digital
