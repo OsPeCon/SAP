@@ -87,15 +87,14 @@ Llamada a tabla T012K
 
 VALIDACIONES
 
-SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SIN EXTRACTO BANCARIO
-EJEMPLO: Hasta liberado: 100003227 ZP y KY (1)
+SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SIN EXTRACTO BANCARIO (1)
 
 NO CANJEAR cuando:
-No esta liberado (2)
-Esta liberado pero tiene conciliacion bancaria (3)
-La OP esta anulada, es decir BKPF = STBLG es distinto de vacio. Mensaje de error: “La OP se encuentra anulada con doc BKPF = STBLG
+- No esta liberado (2)
+- Esta liberado pero tiene conciliacion bancaria (3)
+- La OP esta anulada, es decir BKPF = STBLG es distinto de vacio. Mensaje de error: “La OP se encuentra anulada con doc BKPF = STBLG
 
-Especicacion de la validacion:
+Especicacion de la validacion para hacer el canje:
 
 Ingresar a BSEG con SOC y BELNR = doc de pago y clase de cuenta KOART = “S”. 
 
