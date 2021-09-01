@@ -91,20 +91,21 @@ SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SI
 EJEMPLO: Hasta liberado: 100003227 ZP y KY (1)
 
 NO CANJEAR cuando:
-NO ESTA LIBERADO (2)
-ESTA LIBERADO PERO TIENE CONCILIACION BANCARIA. Ejemplo: 100001995  KZ – KY – ZF (extracto bancario) (3)
-La OP esta anulada BKPF = STBLG es distinto de vacio. Mensaje de error… “La OP se encuentra anulada con doc BKPF = STBLG
+No esta liberado (2)
+Esta liberado pero tiene conciliacion bancaria (3)
+La OP esta anulada, es decir BKPF = STBLG es distinto de vacio. Mensaje de error: “La OP se encuentra anulada con doc BKPF = STBLG
 
+Especicacion de la validacion:
 
-EFD:
 Ingresar a BSEG con SOC y BELNR = doc de pago y clase de cuenta KOART = “S”. 
 
-	Si parCana ese registro el campo BSEG-AUGBL es distinto de vacio, hacer un segundo ingreso a la BSEG con 
+-Si para ese registro el campo BSEG-AUGBL es distinto de vacio, hacer un segundo ingreso a la BSEG con 
 Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese registro BSEG-AUGBL es vacio, ENTONCES LIBERAR. (1)
-Si ese campo es distinto de vacio (3) NO LIBERAR y arrojar el siguiente error: “la OP no puede canjearse ya que se encuentra conciliada con Documento XXXXXXXX” siendo xxxxx el valor que se encuentra en BSEG-AUGBL.
+
+        -Si ese campo es distinto de vacio (3) NO LIBERAR y arrojar el siguiente error: “la OP no puede canjearse ya que se encuentra conciliada con Documento XXXXXXXX” siendo xxxxx el valor que se encuentra en BSEG-AUGBL.
 
 
-	Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberado.
+-Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberada.
 
 
 **Para canje manual no existe documentacion tecnica**
