@@ -1,142 +1,110 @@
 ---
-title: Mail Nota de Debito / Credito.
+title: Canje de Ordenes de Pago.
 date: Last Modified
-permalink: /Mail_Nota_Debito_Credito/
+permalink: /Canje_Ordenes_de_pago/
 eleventyNavigation:
-    key: mailnotas
+    key: canje
     order: 30
-    title: Mail Nota de Debito / Credito.
+    title: Canje de Ordenes de Pago.
 ---
-
-# Envío Automático de Mail de NC y ND
+# Canje de Ordenes de Pago
 
 ## Descripcion breve del proceso:
-Envío automático por mail a los prestadores, del detalle de Notas de Crédito y Notas de Débito propias tanto médicas como administrativas.
-Los adjuntos al mail serán los formularios de ND y NC y la hoja de detalle de débitos generada por Presmed.
+Las ordenes de pago que se encuentren liberadas, ya no podran ser anuladas; con lo cual se debera hacer un "Canje".
+Esto corre tanto para las OP de cheques como para las de transferencias de todos los bancos.
+El canje implica generar una nueva deuda con el proveedor para generar un pago y a la vez bajar el saldo de la cuenta de cheque liberado o transferencia liberada. 
 
-***
-***
+---
 
 ## Proceso paso a paso:
-Si bien la transaccion de envio de mail con los adjuntos se ejecuta en forma automatica todos los dias, existe la forma de que el usuario la ejecute en forma manual, la cual se explica a continuacion:
+El canje de OP puede realizarse de dos formas: Manual o Automatica
 
-ENVIO MANUAL POR EL USUARIO:
+CANJE MANUAL:
 
-**TRANSACCION: ZFI_ENVIO_ND**
+**TRANSACCION: FB01**
+Se debera generar una clase de documento "KS". 
+Documento contable con clave de contabilizaion 34 para el acreedor y 40 para la cuenta de cheque liberado o bien transferencia liberada segun corresponda.
+El importe debera ser el contabilziado en la OP original en la cuenta contable "cheque liberado o transferencia liberada.
 
-Datos de selección del programa: 
-* Sociedad: 0100
-* Nº Nota D/C: indicar el nro de debito o credito por el que va a enviarse el mail
-* Proveedor: indicar el proveedor
-* Fecha de registracion: fecha de registracion del debito o credito
-* Fecha de documento: fecha de documento del debito o credito
-* Fecha de facturacion: fecha de la factura
-* Factura: nro. SAP de factura
-* Observaciones: si se tilda este campo, se imprimira al pie del formulario de la ND el texto determinado en la configuracion.
-* Resumen Expediente Presmed: Indicar si el debito sap se envia con o sin la hoja resumen de presmed.
+Datos importantes en la posicion del acreedor: 
+* Borrar retenciones las retenciones ya que las mismas fueron contabilizadas en la OP original 
+* Otros datos - Clave de Referencia 1: Ingresar el nro. de OP que se esta canjeando, ya que sino el sistemas arrojara mensaje de error. Este dato sirve a efectos de reportes posteriores.
 
-Los mails se enviaran desde las siguientes casillas de correo: 
-- Para Sucursal 0004: noreply-hospitales@uocra.org 
-- Para Sucursal 0002: noreply-cuentasapagar@uocra.org
+Una vez que el documento KS esta contabilizado, el mismo seguira el curso de pago normal.
 
-Si el envio es para una nota de credito, el mail no llevara hoja resumen de presmed
+CANJE AUTOMATICO:
 
-Si es ND, tiene que tener adjunto de hoja resumen de Presmed
+**TRANSACCION: ZFI_CANJE**
 
-**Transaccion de reporte envios: ZFI_ENVIO_ND_L**
+Pantalla de Selección: 
+* Sociedad: 
+* Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
+* Motivo del canje (hasta 18 caracteres)
 
-Esta trasnacción se podra utilizar para analizar los envios de mails realizados.
+
 
 
 ### Casos / Preguntas frecuentes
-No existen casos a la fecha 
 
-***
-***
+No existen casos a la fecha
+
+---
+
+---
+
 ## Documentacion Técnica
 
-**En Presmed:**
+**Para Canje Automatico:**
 
-•	Generación y guardado de hoja resumen de débitos médicos y administrativos en el directorio: uocrafs/prodpresmed/expediente 
+Transacción: ZFI_CANJE
+Programa: ZFI_CANJE_AUT
 
-•	Nombre del archivo: EXP_XXXXXXXXXX.pdf (siendo XXXXXXXX el nro. de expediente generado en Presmed) 
+Pantalla de Selección: 
+* Sociedad: 
+* Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
+* Motivo del canje (18 caracteres)
 
-•	Actualización  la hoja resumen en función de la generación de débitos subsiguientes.
+Tomar del documento de pago indicado:
+- Proveedor (KOART = K)
+- Cuenta contable (para posición BSEG-KOART = S y BSEG-QSSKZ  = vacío) 
 
-•	Generación de hoja resumen por expediente “desde - hasta”.
+Call Transaction a Transaction FB01
 
+Clase de documento a generar KS
 
-**En SAP:** 
+Posición 1: 
+Clave contabilización 34 / Proveedor / Clave Ref1:  doc pago rechazado
 
-* TRANSACCION: ZFI_ENVIO_ND
+Posición 2:
+Clave contabilización 50 / 
+Cuenta de mayor a determinar por tabla T012K
 
-* PROGRAMA: ZFI_ENVIO_MAIL_DEB 
-(Transaccion de Impresión call transaction: ZNOPN en programa de envio que llama al smartform)
+Llamada a tabla T012K
 
-* FORMULARIO:  ZSF_DEB_CRED2 (smart form) 
-Formulario de notas de débito y credito propias registradas en SAP: Clase de clases de documento son KB, KD y KG
-Configuración en SO10: el TEXTO “ZDETALLENOTA”, contiene el detalle que se imprime al pie del smartform de la ND o NC cuando se marca el pop up "observaciones" en el programa.
+-Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se usa T012K-HKONT ID 00003
 
-Datos de selección del programa:
-•	Nro. débito SAP:
-•	Fecha de entrada:
-•	Fecha de contabilización
-•	Nro. legal factura
-•	Nro. factura SAP 
-•	Proveedor
+-Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT ID 00006
 
-El programa realiza envío de mail con las notas de débito y debito adjuntas, más la hoja resumen de detalle de debitos emitida desde presmed.
+VALIDACIONES
 
--Ejecución automática: diaria,  schedulleada para las 23 hs todos los días.
+SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SIN EXTRACTO BANCARIO
+EJEMPLO: Hasta liberado: 100003227 ZP y KY (1)
 
--Variantes:
-
-Hospitales KD-KB-KG (Hospitales Viernes):
-Solo se envia el dia viernes toda la semana de debitos/creditos generados al grupo de cuentas 0004.
-
-KD DEBITO ADM (Cuentas a pagar -10): Se envian 10 dias posteriores al registro de los documentos KD del grupo de cuentas 0002 (Exepto prestador 5880).
-KD DEBITO ADM2 (Cuentas a pagar Sin Hoja -10)
-Doc. KD sin hoja de servicio del grupo de cuentas 0002 (Solo prestador 5880).
-KB DEBITO MED (Cuentas a pagar -3)
-KB: Doc. KB se envian 3 dias posteriores al registro del grupo de cuentas 0002.
-KG Credito (Cuentas a pagar Diario)
-Los Doc. KG del grupo de cuentas 0002 se envian todos los dias.
-
--Opción de Ejecución manual 
-La opción automática controlara la duplicidad del envío, no siendo así para la ejecución manual.
-
-EL programa realiza un control del usuario que envio el mail, si es LTAMARGO1 impide que se envie 2 veces. Si es otro usuario, es sin limite.
+NO CANJEAR cuando:
+NO ESTA LIBERADO (2)
+ESTA LIBERADO PERO TIENE CONCILIACION BANCARIA. Ejemplo: 100001995  KZ – KY – ZF (extracto bancario) (3)
+La OP esta anulada BKPF = STBLG es distinto de vacio. Mensaje de error… “La OP se encuentra anulada con doc BKPF = STBLG
 
 
-Configuración de Mail: 
+EFD:
+Ingresar a BSEG con SOC y BELNR = doc de pago y clase de cuenta KOART = “S”. 
 
-    Remitentes: 
-    1. noreply-hospitales@uocra.org y 
-    2. noreply-cuentasapagar@uocra.org
-
-    Título: Tipo Documento+Numero sapDoc. (Ej. Débito Médico Nº 0002A00037014)
-
-    Cuerpo del mail: TEXTO configurado en SO10,  “ZFI_MAIL_ND”
-
-    Observaciones: se imprime al pie del smartform de la ND o NC el texto de la SO10 “ZDETALLENOTA”
-
-VaLidaciones en Transaccion ZNOPN 
-
-    Códigos:
-    * 02: ND A
-    * 07: ND B
-    * 03: NC A
-    * 08: NC B
-
-Hoja Resumen Presmed:
-Si es NC NO tiene adjunto de hoja resumen
-
-Si es ND, tiene que tener adjunto de hoja resumen de Presmed. El adjunto lo busca por expediente en el texto cabecera (BKPF BKTXT) del BKPF BELNR, ejercicio y sociedad, en la carpeta \\uocrafs\DEVPresmed\Expediente nombre archivo pdf EXP_0000332445
-Si lo encuentra, envía el mail y sino cancela el envio y avisa en el log.
+	Si parCana ese registro el campo BSEG-AUGBL es distinto de vacio, hacer un segundo ingreso a la BSEG con 
+Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese registro BSEG-AUGBL es vacio, ENTONCES LIBERAR. (1)
+Si ese campo es distinto de vacio (3) NO LIBERAR y arrojar el siguiente error: “la OP no puede canjearse ya que se encuentra conciliada con Documento XXXXXXXX” siendo xxxxx el valor que se encuentra en BSEG-AUGBL.
 
 
-Tabla de control de envios realizados: 
-ZCONTROL_MAIL
+	Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberado.
 
-Transaccion de reporte envios: ZFI_ENVIO_ND_L
 
+**Para canje manual no existe documentacion tecnica**
