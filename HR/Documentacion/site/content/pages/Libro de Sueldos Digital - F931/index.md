@@ -10,7 +10,7 @@ eleventyNavigation:
 
 
 
-Descripcion breve del proceso:
+### Descripcion breve del proceso:
 
 Esta funcionalidad será utilizada para completar las nóminas
 equivalentes de la AFIP con las que estamos utilizando en SAP, como así también
@@ -21,11 +21,9 @@ utilizar el LSD.
 En base a la tarea detallada anteriormente se deberá cargar en
 forma mensual la liquidación de los sueldos en la AFIP.
 
----
 
----
 
-## Proceso paso a paso:
+## Proceso paso a paso :
 
 
 **Metodologia** 
