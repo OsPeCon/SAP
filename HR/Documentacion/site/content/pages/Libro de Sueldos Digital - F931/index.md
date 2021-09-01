@@ -1,4 +1,14 @@
-# Libro de Sueldos Digital
+---
+title: Libro de Sueldos Digital.
+date: Last Modified
+permalink: /Libro de Sueldos Digital - F931/
+eleventyNavigation: 
+    key: librosdesueldos
+    order: 1
+    title: Libro de Sueldos Digital.
+---
+
+
 
 Descripcion breve del proceso:
 
@@ -30,7 +40,7 @@ Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casil
 
 El sistema muestra lasiguiente pantalla:
 
-![img](image/index/1630424321657.png)
+![img](../content/images/Libro_de_Sueldos_Digital_F931/1630424321657.png)
 
 
 Datos a integrar:
@@ -44,28 +54,28 @@ Una vez que se termina de trabajar asociando códigos de AFIP con nóminas propi
 que no hay errores, marcando la línea correspondiente y luego dar un clic en el
 icono “verificar entradas” como se muestra en la siguiente pantalla:
 
-![img](image/index/1630432400509.png)
+![img](../content/images/Libro_de_Sueldos_Digital_F931/1630432400509.png)
 
 
 Si no hay errores para ir guardando la información se deberá dar un clic en el ícono de Generar TXT de acuerdo a lo
 siguiente:
 
-![](file:///C:\Users\mprager\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)![](image/index/1630432478029.png)
+![](file:///C:\Users\mprager\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432478029.png)
 
 
 1 - A continuación se procederá a guardar el mismo:
-![img](image/index/1630432503637.png)
+![img](../content/images/Libro_de_Sueldos_Digital_F931/1630432503637.png)
 
 Cuando se retoma la tarea para seguir asociando nóminas de AFIP con las propias se deberá
 dar clic en el ícono “Cargar TXT” de acuerdo a la siguiente pantalla
 
-![](image/index/1630432535758.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432535758.png)
 
 Se deberá colocar l nombre del archivo que se guardó la información ya creada y el
 sistema mostrará la pantalla con los datos incorporados anteriormente de
 acuerdo a lo siguiente:
 
-![](image/index/1630432556419.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432556419.png)
 
 
 Luego de incorporada nueva información y para
@@ -87,12 +97,12 @@ Transacción SAP: PC00_M29_F931
 
 Mostrará lasiguiente pantalla que a título de ejemplo es el proceso de un empleado:
 
-![](image/index/1630432596580.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432596580.png)
 
 Al ejecutar la misma muestra la siguiente información en donde se detalla
 que la persona ha sido procesada en forma correcta:
 
-![](image/index/1630432616231.png)![](image/index/1630432616231.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432616231.png)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432616231.png)
 
 Al abrir el detalle de los distintos conceptos el sistema muestra la
 siguiente información
@@ -104,19 +114,19 @@ En el Reg 1 “Datos referenciales del envío” Nro. De CUIT del empleador
 En el Reg 2  “Datos de la liquidación”
 muestra los datos del empleado de acuerdo a la siguiente información:
 
-![](image/index/1630432657633.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432657633.png)
 
 Al dar clic
 en Registro 3 “Detalle de los conceptos” muestra el detalle la liquidación como
 se muestra a continuación:
 
-![](image/index/1630432678100.png)![](image/index/1630432678100.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432678100.png)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432678100.png)
 
 
 Al dar clic en Regi 4 “Datos del trabajador” el sistema muestra la
 siguiente información:
 
-![](image/index/1630432694990.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432694990.png)
 
 Esto es el detalle de la liquidación efectuada a un empleado en sus
 distitntos conceptos y que fue procesada en forma correcta al ejecutar esta
@@ -125,17 +135,17 @@ transacción.
 Para procesar
 el archivo y subirlo a la AFIP se deberá:
 
-![](image/index/1630432734310.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432734310.png)
 
 Si está todo correcto se debe dar clic en Archvio Temse y el sistema
 muestra la siguiente pantalla:
 
-![](image/index/1630432749083.png)![](image/index/1630432749083.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432749083.png)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432749083.png)
 
 Se deberá dar clic en la lupa y el sistema mostrará la siguiente
 información:
 
-![](image/index/1630432773888.png)
+![](../content/images/Libro_de_Sueldos_Digital_F931/1630432773888.png)
 
 
 Hacer
