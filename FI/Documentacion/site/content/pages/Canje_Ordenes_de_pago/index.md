@@ -80,13 +80,15 @@ Clave contabilización 34 / Proveedor / Clave Ref1:  doc pago rechazado
 
 Posición 2:
 Clave contabilización 50 /
-Cuenta de mayor a determinar por tabla T012K
+Cuenta de mayor a determinar por tabla T012K (CON EXCEPCION *)
 
-Llamada a tabla T012K
+Llamada a tabla T012K (para determinar la contrapartida del asiento del canje)
 
--Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se usa T012K-HKONT ID 00003
+    -Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se 							usa T012K-HKONT de ID 00003
 
--Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT ID 00006
+    -Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT de ID 00006
+
+    EXCEPCION (*): Si T012K-HKONT=1101021414 o 1101021394 entonces se usa T012K-HKONT de ID 00012
 
 VALIDACIONES
 
