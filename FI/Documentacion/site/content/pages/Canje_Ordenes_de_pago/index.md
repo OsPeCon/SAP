@@ -32,10 +32,12 @@ Datos importantes en la posicion del acreedor:
 
 * Borrar retenciones las retenciones ya que las mismas fueron contabilizadas en la OP original
 * Otros datos - Clave de Referencia 1: Ingresar el nro. de OP que se esta canjeando, ya que sino el sistemas arrojara mensaje de error. Este dato sirve a efectos de reportes posteriores.
+* Si OP original tiene datos de receptor de pago, se deberan completar.
 
 Una vez que el documento KS esta contabilizado, el mismo seguira el curso de pago normal.
 
 CANJE AUTOMATICO:
+Por default, el modo de ejecucion de la transaccion sera "N" automatico, este modo no da la posibilidad de modificar datos de receptor de pago. En caso de que haya que modificar estos datos en pantalla, se debera seleccionar MODO VISIBLE "A".
 
 **TRANSACCION: ZFI_CANJE**
 
@@ -112,5 +114,11 @@ Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese regis
 ```
 
 -Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberada.
+
+
+VaLIDACION de que el canje no este realizado
+
+Validacion de Sociedad
+
 
 **Para canje manual no existe documentacion tecnica**
