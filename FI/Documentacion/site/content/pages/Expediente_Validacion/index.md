@@ -41,5 +41,5 @@ Funcion: ZWS_CONSULTA_EXPEDIENTE
 Destination: ZCONSULTA_EXPEDIENTE
 
 # Programa
-![Mi Imagen](images/Standard_01.png)
-![Prueba](images/Standard_02.png)
+![Mi Imagen](../content/images/Expediente_Validacion/standard_01.png)
+![Prueba](../content/images/Expediente_Validacion/Standard_02.png)
