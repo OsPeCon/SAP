@@ -1,3 +1,12 @@
+---
+title: Transacciones Basicas.
+date: Last Modified
+permalink: /Cheques/
+eleventyNavigation:
+    key: cheques
+    order: 10
+    title: Transacciones Basicas.
+---
 # Transacciones Basicas 
 
 ZPDF
