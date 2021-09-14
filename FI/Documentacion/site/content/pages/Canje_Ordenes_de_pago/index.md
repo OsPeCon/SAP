@@ -125,6 +125,8 @@ Validacion de que el canje no este realizado
 
 Validacion de Sociedad
 
+Validacion de Ejercicio
+
 Validacion de O.P. anulada
 
 Validacion de O.P. ya canjeada
