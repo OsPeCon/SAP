@@ -45,7 +45,6 @@ Pantalla de Selección:
 
 * Sociedad:
 * Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
-* Ejercicio:
 * Motivo del canje (hasta 18 caracteres)
 * Tipo ejecucion BI: Modo A permite visualizar las pantallas, en modo N invisible y E solo errores. 
 
@@ -68,10 +67,8 @@ Pantalla de Selección:
 
 * Sociedad:
 * Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
-* Ejercicio:
 * Motivo del canje (18 caracteres)
 * Tipo ejecucion BI: Modo A permite visualizar las pantallas, en modo N invisible y E solo errores.
-* Ejercicio:
 
 Tomar del documento de pago indicado:
 
@@ -124,6 +121,8 @@ Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese regis
 Validacion de que el canje no este realizado
 
 Validacion de Sociedad
+
+Validacion de Ejercicio
 
 Validacion de O.P. anulada
 
