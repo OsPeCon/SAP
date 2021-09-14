@@ -29,7 +29,7 @@ Caso 2:
 ---
 
 ## Documentación Técnica
-* Para el envio de mail en el Banco BLP/BNA, se agrego una validacion la cual deja en cola de espera en la sost en caso que la fecha de envio sea superior a la fecha del dia:
+* Para el envio de mail en el Banco BLP/BNA, se agrego una validacion la cual deja en cola de espera en la sost en caso que la fecha de pago/liberacion sea superior a la fecha del dia que se ejecuta:
 
       IF sy-datum < p_output-fecha_transfer.
 
