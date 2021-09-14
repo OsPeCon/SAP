@@ -1,39 +1,22 @@
----
-title: Transacciones Basicas.
-date: Last Modified
-permalink: /Cheques/
-eleventyNavigation:
-    key: cheques
-    order: 10
-    title: Transacciones Basicas.
----
-# Transacciones Basicas 
-
-ZPDF
-
-
+# Transacciones Basicas
 
 ## Descripcion breve del proceso:
 
- Para poder generar en SAP un PDF a partir de una impresión, se deben instalar estos dos programas (free).
+En este documento se detallan las transacciones basicas que son de gestion SAP pero que no pertenecen a un modulo particular
+
+### Transaccion ZPDF:
+
+ññññññññ
+
+---
+
+---
 
 
-## Proceso paso a paso:
+### Transaccion SU53:
 
-Instalar:
+ññññññññ
 
-1)	CUTEWRITER.EXE
-2)	CONVERTER.EXE
+---
 
-Una vez instalados, el usuario desde SAP puede seleccionar la Impresora LOCAL y se le generara un archivo en PDF en su PC.
-
-
-
-### Casos / Preguntas frecuentes
-
-
-
-***
-***
-## Documentacion Técnica
-
+---
