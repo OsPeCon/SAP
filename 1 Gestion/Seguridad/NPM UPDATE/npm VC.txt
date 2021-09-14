@@ -1,0 +1,5 @@
+npm update 
+npm i @11ty/eleventy
+npm i markdown-it
+npm i markdown-it-anchor
+npm start
