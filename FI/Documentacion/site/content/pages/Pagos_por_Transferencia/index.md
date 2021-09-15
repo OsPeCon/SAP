@@ -17,6 +17,18 @@ Pagos via transferencia Banco La Pampa, Banco Nacion y Banco Hipotecario.
 
 1. 
 
+ENVIO DE MAIL:
+Tanto para UOCRA como para OSPECON y para todos los bancos con los que realizamos transferencias (BNA, BLP y BHI), el envio de  MAIL es POSDATADO.
+
+
+Funciona asi:
+
+EN la transacción de liberación, el mail se envía al proveedor en la fecha indicada como “fecha de transferencia” en el momento en que generaron el lote archivo para ser enviado al banco.
+•	Si esa fecha es la del día, el mail se dispara inmediatamente.
+•	Si la fecha es posterior a la del día, el mail se disparara en dicha fecha y a las 10 a.m. (es decir hoy hago un lote de transferencia con fecha 19.09.2021… cuando voy a liberar el lote,  el mail no se envía ya que el mismo será enviado el 19.09 a las 10 hs)
+
+En el reporte ZCBU_2, las marcas de mail son las mismas ya que el mail sabremos que fue enviado el dia de transferencia.
+
 
 
 
@@ -29,7 +41,8 @@ Caso 2:
 ---
 
 ## Documentación Técnica
-* Para el envio de mail en el Banco BLP/BNA, se agrego una validacion la cual deja en cola de espera en la sost en caso que la fecha de pago/liberacion sea superior a la fecha del dia que se ejecuta:
+
+* ENVIO DE MAIL: Para el envio de mail en el Banco BLP/BNA, se agrego una validacion la cual deja en cola de espera en la sost en caso que la fecha de pago/liberacion sea superior a la fecha del dia que se ejecuta:
 
       IF sy-datum < p_output-fecha_transfer.
 
