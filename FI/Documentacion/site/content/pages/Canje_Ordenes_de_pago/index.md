@@ -46,7 +46,26 @@ Pantalla de Selección:
 * Sociedad:
 * Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
 * Motivo del canje (hasta 18 caracteres)
-* Tipo ejecucion BI: Modo A permite visualizar las pantallas, en modo N invisible y E solo errores. 
+* Tipo ejecucion BI: Modo A permite visualizar las pantallas, en modo N invisible y E solo errores.
+
+**VALIDACIONES que realiza el programa:**
+
+* Solo se canjea en el caso en que ya se encuentre la OP
+liberada o compensada
+
+* No se canjea cuando la OP no está liberada
+
+* No se canjea cuando la OP esta liberada pero tiene
+conciliacion bancaria. Esta validación solo se realiza para Banco Hipotecario,
+siendo para ospecon  93000 y para uocra 95000.
+
+* No se canjea cuando la OP esta anulada.
+
+* No se canjea cuando el canje ya fue realizado (es decir
+exite un KS para esa OP)
+
+* Adicionalmente, el programa valida la sociedad y el
+ejercicio de la OP que se va a canjear.
 
 ### Casos / Preguntas frecuentes
 
@@ -88,11 +107,13 @@ Cuenta de mayor a determinar por tabla T012K (CON EXCEPCION *)
 
 Llamada a tabla T012K (para determinar la contrapartida del asiento del canje)
 
-    -Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se 							usa T012K-HKONT de ID 00003
+```
+-Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se 							usa T012K-HKONT de ID 00003
 
-    -Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT de ID 00006
+-Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT de ID 00006
 
-    EXCEPCION (*): Si T012K-HKONT=1101021414 o 1101021394 entonces se usa T012K-HKONT de ID 00012
+EXCEPCION (*): Si T012K-HKONT=1101021414 o 1101021394 entonces se usa T012K-HKONT de ID 00012
+```
 
 VALIDACIONES
 
@@ -101,7 +122,7 @@ SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SI
 NO CANJEAR cuando:
 
 - No esta liberado (2)
-- Esta liberado pero tiene conciliacion bancaria (3)
+- Esta liberado pero tiene conciliacion bancaria (3). Esta validacion solo realizarla para Banco   HBKID = 93000 para BUKRS = 0100, HBKID = 95000 para BUKRS = 0200
 - La OP esta anulada, es decir BKPF = STBLG es distinto de vacio. Mensaje de error: “La OP se encuentra anulada con doc BKPF = STBLG
 
 Especicacion de la validacion para hacer el canje:
@@ -116,7 +137,6 @@ Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese regis
 ```
 
 -Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberada.
-
 
 Validacion de que el canje no este realizado
 
