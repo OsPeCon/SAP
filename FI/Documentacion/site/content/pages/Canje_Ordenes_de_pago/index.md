@@ -52,13 +52,13 @@ Pantalla de Selección:
 **VALIDACIONES que realiza el programa:**
 
 * Solo se canjea en el caso en que ya se encuentre la OP
-liberada o compensada
+liberada o compensada.
 
-* No se canjea cuando la OP no está liberada
+* No se canjea cuando la OP no está liberada.
 
 * No se canjea cuando la OP esta liberada pero tiene
 conciliacion bancaria. Esta validación solo se realiza para Banco Hipotecario,
-siendo para ospecon  93000 y para uocra 95000.
+siendo para ospecon 93000 y para uocra 95000.
 
 * No se canjea cuando la OP esta anulada.
 
@@ -140,14 +140,14 @@ Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese regis
 
 -Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberada.
 
-Validacion de que el canje no este realizado
+Validacion de que el canje no este realizado.
 
-Validacion de Sociedad
+Validacion de Sociedad.
 
-Validacion de Ejercicio
+Validacion de Ejercicio.
 
-Validacion de O.P. anulada
+Validacion de O.P. anulada.
 
-Validacion de O.P. ya canjeada
+Validacion de O.P. ya canjeada.
 
 **Para canje manual no existe documentacion tecnica**
