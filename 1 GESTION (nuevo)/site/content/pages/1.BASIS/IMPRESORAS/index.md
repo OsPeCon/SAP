@@ -9,6 +9,11 @@ eleventyNavigation:
 ---
 ## **IMPRESORA**
 
-**Descripción breve del proceso:**
+![img](../../images/impresoras/printsap1.jpg)
+![img](../../images/impresoras/printsap2.jpg)
+![img](../../images/impresoras/printsap3.jpg)
+
+
+
 
 ## Documentacion tecnica:
