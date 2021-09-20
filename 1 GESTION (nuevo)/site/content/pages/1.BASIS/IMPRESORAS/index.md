@@ -9,9 +9,9 @@ eleventyNavigation:
 ---
 ## **IMPRESORA**
 
-![img](../../images/impresoras/printsap1.jpg)
-![img](../../images/impresoras/printsap2.jpg)
-![img](../../images/impresoras/printsap3.jpg)
+![img](../../../images/Impresoras/printsap1.jpg)
+![img](../../../images/Impresoras/printsap2.jpg)
+![img](../../../images/Impresoras/printsap3.jpg)
 
 
 
