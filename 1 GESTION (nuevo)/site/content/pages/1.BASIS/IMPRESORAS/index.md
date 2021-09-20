@@ -1,7 +1,7 @@
 ---
 title: IMPRESORAS.
 date: Last Modified
-permalink: /IMPRESORA/
+permalink: /IMPRESORAS/
 eleventyNavigation:
     key: impresora
     order: 40
