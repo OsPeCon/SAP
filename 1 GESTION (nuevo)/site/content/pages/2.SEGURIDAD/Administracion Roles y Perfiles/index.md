@@ -1,53 +1,51 @@
 ---
-title: PSTI.
+title: Roles y Perfiles.
 date: Last Modified
-permalink: /PSTI/
+permalink: /ROLES Y PERFILES/
 eleventyNavigation:
-    key: psti
+    key: Roles y Perfiles
     order: 40
-    title: PSTI.
+    title: ROLES Y PERFILES.
 ---
-## **PSTI: Facturacion Adherentes**
+## **Modificacion Roles y Perfiles**
 
 **Descripción breve del proceso:**
 
-Emision , Impresion y envio de facturacion.
+Se modifican Roles y Perfiles de usuarios.
 
 ## Proceso paso a paso:
 
-1. Listado de Bajas: Trx. ZFI_BAJAS. Se informan los adherentes con 2 o más facturas vencidas. En el caso que sean 2, solo informa en el listado y en el caso que sean 3 además de informar realiza el bloqueo de dicho adherente.![img](image/index/1628705225985.png)
 
-2. ZFI_ADHERENTE_FACT **– FACTURACION AUTOMATICA:                                                        **Una vez confirmado los clientes a facturar con menos de 3 meses de deuda, debemos ejecutar la trx.zfi_adherente_fact.![img](image/index/1628705242254.png)
+Siempre que se modifica un rol simple (se le modifica alguna
+tx.) hay que ir solapa autorizaciones y usuarios….(al estar símbolo en ROJO)
 
-3. Importe de Plan: Permite ingresar el valor a facturar dependiendo del tipo de plan que posee el adherente.                ![img](image/index/1628706183893.png)
+![](file:///C:\Users\ciro\Desktop\PROYECTOSAPTI\SAP\1 GESTION (nuevo)\site\content\images\Roles y Perfiles/ryp1.jpg)
 
-4. Numero Documento Cliente permite ingresar los adherentes a facturar. Numero de Cuenta Anterior: Es el numero utilizado en el sistema anterio de facturacion ""NO SAP"".  Fecha de Facturacion: ingresar fecha de facturacion. Condicion de Pago: Z018 ""Fija"". Tipo de Ejecucion: Visualizacion, permite visualizar importe y datos del adherente a facturar. Ejecucion, se realiza la facturacion.
+Luego ir a lápiz de modificar y
 
-5. Factura Manual: Permite Facturar en forma manual a un adherente. En
-   caso de encontrarse un error en la facturación Automática, debemos facturar en
-   forma manual.
+![](file:///C:\Users\ciro\Desktop\PROYECTOSAPTI\SAP\1 GESTION (nuevo)\site\content\images\Roles y Perfiles/ryp2.jpg)
 
-6. **J1AMONITOR (ENVIO DE FACTURAS A AFIP PARA INGRESAR CAE A LA MISMA):** Permite enviar la facturacion generada a AFIP. ![](image/index/1628706349801.png)
+Hay que ingresar a los arboles del menú con símbolos
+amarillos o rojos.
 
-**Sociedad:** 0100
+Si se repiten los sub nodos se puede eliminar el duplicado.
 
-**Numero de sucursal:**
-0007
+![](file:///C:\Users\ciro\Desktop\PROYECTOSAPTI\SAP\1 GESTION (nuevo)\site\content\images\Roles y Perfiles/ryp3.jpg)
 
-7. **ZFI_ADH_MAIL**
+Al grabar genera el perfil luego se presionar ENTER y por
+ultimo HAY QUE GENERAR “ CON LA RUEDITA ROJA Y BLANCA”
 
-**(ENVIO DE MAIL E IMPRESIÓN DE FACTURA)**
+Luego ir solapa usuario y hacer comparar usuario hasta que
+marque proceso en VERDE.
 
-La trx. zfi_adh_mail permite el envió
-de mail a los adherentes que poseen el mismo cargado o bien imprimir la factura
-a los que no lo poseen.
+Resumen: hoy creamos usuario prueba2 SU01 al cual le
+asignamos el rol compuesto “rs0100*nuevo*”  TX. PFCG y además creamos un
+rol simple llamado “TX. PFCG“as0100* y se asignó al rol compuesto.
 
-## **Casos / Preguntas frecuentes**
+![](file:///C:\Users\ciro\Desktop\PROYECTOSAPTI\SAP\1 GESTION (nuevo)\site\content\images\Roles y Perfiles/ryp4.jpg)
 
-Caso 1:
+Solapa menú dentro de modificar roles se asignas las
+transacciones correspondientes para cada rol simple.
 
-Caso 2:
-
----
 
 ## Documentación Técnica
