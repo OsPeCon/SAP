@@ -11,5 +11,4 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
-
 ## Documentacion tecnica:
