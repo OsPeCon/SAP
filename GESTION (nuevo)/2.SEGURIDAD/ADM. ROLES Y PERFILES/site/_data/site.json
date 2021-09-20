@@ -1,0 +1,21 @@
+{
+  "name": "OsPeCon TI",
+  "subtitle": "Documentación",
+  "description": "Aqui se documenta todo lo que tiene que ver con las normas, métodos y formas utilizadas dentro del área de TI",
+  "footer": "OsPeCon TI",
+  "url": "https://spacebook.app",
+  "githubUrl": "https://github.com/<username>/<repository>",
+  "githubBranch": "main",
+  "navigationStyle": "vertical",
+  "emoji": "💥",
+  "enableSearch": true,
+  "enableDarkMode": true,
+  "enableEditButton": true,
+  "enableDatestamp": true,
+  "enableGithubLink": false,
+  "enableContact": false,
+  "enableNetlifyCMS": false,
+  "enableComments": false,
+  "enableEncryption": false,
+  "enablePageNavigation": true
+}
