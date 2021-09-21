@@ -14,7 +14,7 @@ Instalación de impresóra pdf Bullzip
 
 **Descripción breve del proceso:**
 
-Se instala esta aplicacion para poder generar los PDF para SAP.
+Se instala esta aplicacion para poder generar los PDF para exportar a SAP.
 
 ## Proceso paso a paso:
 
