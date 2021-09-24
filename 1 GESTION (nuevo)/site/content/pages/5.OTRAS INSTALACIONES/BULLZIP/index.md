@@ -16,14 +16,6 @@ Instalación de impresóra pdf Bullzip
 
 Se instala esta aplicacion para poder generar los PDF para exportar a SAP.
 
-## Proceso paso a paso:
-
-
-
-## **Casos / Preguntas frecuentes**
-
-
-
 ## Documentación Técnica
 
 Los usuarios de Presmed que estén afectados a la exportación de expedientes para SAP, deberán tener instalado y configurado este programa.
