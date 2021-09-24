@@ -4,45 +4,65 @@ date: Last Modified
 permalink: /BULLZIP/
 eleventyNavigation:
     key: bullzip
-    order: 40
+    order: 50
     title: BULLZIP.
 ---
-## **PSTI: Facturacion Adherentes**
+## **BullZip**
+
+Instalación de impresóra pdf Bullzip
+
 
 **Descripción breve del proceso:**
 
-Emision , Impresion y envio de facturacion.
+Se instala esta aplicacion para poder generar los PDF para exportar a SAP.
 
 ## Proceso paso a paso:
 
-1. Listado de Bajas: Trx. ZFI_BAJAS. Se informan los adherentes con 2 o más facturas vencidas. En el caso que sean 2, solo informa en el listado y en el caso que sean 3 además de informar realiza el bloqueo de dicho adherente.![img](image/index/1628705225985.png)
-2. ZFI_ADHERENTE_FACT **– FACTURACION AUTOMATICA:                                                        **Una vez confirmado los clientes a facturar con menos de 3 meses de deuda, debemos ejecutar la trx.zfi_adherente_fact.![img](image/index/1628705242254.png)
-3. Importe de Plan: Permite ingresar el valor a facturar dependiendo del tipo de plan que posee el adherente.                ![img](image/index/1628706183893.png)
-4. Numero Documento Cliente permite ingresar los adherentes a facturar. Numero de Cuenta Anterior: Es el numero utilizado en el sistema anterio de facturacion ""NO SAP"".  Fecha de Facturacion: ingresar fecha de facturacion. Condicion de Pago: Z018 ""Fija"". Tipo de Ejecucion: Visualizacion, permite visualizar importe y datos del adherente a facturar. Ejecucion, se realiza la facturacion.
-5. Factura Manual: Permite Facturar en forma manual a un adherente. En
-   caso de encontrarse un error en la facturación Automática, debemos facturar en
-   forma manual.
-6. **J1AMONITOR (ENVIO DE FACTURAS A AFIP PARA INGRESAR CAE A LA MISMA):** Permite enviar la facturacion generada a AFIP. ![](image/index/1628706349801.png)
 
-**Sociedad:** 0100
-
-**Numero de sucursal:**
-0007
-
-7. **ZFI_ADH_MAIL**
-
-**(ENVIO DE MAIL E IMPRESIÓN DE FACTURA)**
-
-La trx. zfi_adh_mail permite el envió
-de mail a los adherentes que poseen el mismo cargado o bien imprimir la factura
-a los que no lo poseen.
 
 ## **Casos / Preguntas frecuentes**
 
-Caso 1:
 
-Caso 2:
-
----
 
 ## Documentación Técnica
+
+Los usuarios de Presmed que estén afectados a la exportación de expedientes para SAP, deberán tener instalado y configurado este programa.
+
+1. El instalador se ha descargado en la carpeta 
+
+\\UOCRA_AFILMED\Prestaci64Bits\Bullzip
+
+
+![img](../../../images/BullZip/bullzip1.jpg)
+
+
+2. se pude descargar del sitio https://www.bullzip.com/products/pdf/download.php, la versión Community Edition.
+
+3. Realizar la instalación por defecto, y en la instancia de Dependencias, descargar todas.
+
+![img](../../../images/BullZip/bullzip2.jpg)
+
+4. Completar la instalación yproceder a la configuración.
+
+![img](../../../images/BullZip/bullzip3.jpg)
+
+Configuración de las OPCIONES de BullzipTerminada la instalación proceder a configurar las opciones de Bullzip. Acceder desde el menúde inicio a
+
+![img](../../../images/BullZip/bullzip4.jpg)
+
+1. En la pestaña General, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
+
+
+![img](../../../images/BullZip/bullzip5.jpg)
+
+2. En la pestaña Diálogos:
+
+![img](../../../images/BullZip/bullzip6.jpg)
+
+3. En la pestaña Acciones, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
+
+![img](../../../images/BullZip/bullzip7.jpg)
+
+Concluir con “Aplicar”y “Aceptar”
+
+![img](../../../images/BullZip/bullzip8.jpg)
