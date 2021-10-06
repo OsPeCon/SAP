@@ -105,9 +105,15 @@ Formatos a utilizar para el armado de los archivos TXT , indistintamete de la so
 * Banco Hipotcario a Banco Hipotecario - HR_HIPOTECARIO
 * Banco Frances - En Desarrollo
 
-**Consideraciones especiales por banco** 
+**ConceptosGenerales**
 
-**Banco Hipotecario** 
+La sociedad 0200 , es la unica que  tiene cuentas en todos los bancos propios ( La Pampa , Frances , Hipotecario y Credicoop ) , los empleados de esas sociedades  que tengan esos bancos ( códigos 93 , 44, 17 , 191 Respectivamente )  definidos en sus legajos ,  recibirán la  transferencia desde la cuenta propia de ese banco , aquellos que tengan cuentas definidas en bancos diferentes a estos se les transferirá desde la cuenta del banco La Pampa con salida a otros bancos
+Las sociedades 0100,0300 , 0400 y 0500 , solo tienen cuenta en banco La Pampa ,con lo cual , los empleados de esas sociedades recibirán transferencias siempre desde esa cuentas , si el banco elegido es La pampa se genera en un formato la transferencia y si es diferente a la pampa se genera en otro formato
+
+
+**Consideraciones especiales por banco**
+
+**Banco Hipotecario**
 
 Al generar la informacion para el archivo en la transaccion PC00_M29_CDTA o PC00_M29_CDTB , hay que incluir en la pantalla la fecha de ejecucion requerida . Esa fecha se incluye en el interior del archivo por exigencia del banco para indicar el dia que tiene que realizarse la transferencia , no obstante el archivo puede subirse hasta 48 hs antes de la misma .
 
@@ -123,12 +129,6 @@ ent & numero de convenio & '_' & Fecha (ddmmaa ) & '_' Hora(hhmmss) & '_of000.tx
 ```
 
 
-
-
-**ConceptosGenerales**
-
-Las sociedades 0100 y 0200 , tienen cuentas en todos los bancos propios ( La Pampa , Frances , Hipotecario y Credicoop ) , los empleados de esas sociedades  que tengan esos bancos ( códigos 93 , 44, 17 , 191 Respectivamente )  definidos en sus legajos recibirán la  transferencia desde las cuentas  propias de esos bancos , aquellos que tengan cuentas definidas en bancos diferentes a estos se les transferirá desde la cuenta del banco La Pampa con salida a otros bancos
-Las sociedades 0300 , 0400 y 0500 , solo tienen cuenta en banco La Pampa ,con lo cual , los empleados de esas sociedades recibirán transferencias siempre desde esa cuentas , si el banco elegido es La pampa se genera en un formato la transferencia y si es diferente a la pampa se genera en otro formato
 
 ### Casos / Preguntas frecuentes
 
