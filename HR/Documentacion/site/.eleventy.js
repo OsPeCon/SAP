@@ -74,7 +74,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setTemplateFormats([
         "md",
         "css", // css is not yet a recognized template extension in Eleventy
-        "json",
+        "json", "njk"
     ]);
 
     // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
