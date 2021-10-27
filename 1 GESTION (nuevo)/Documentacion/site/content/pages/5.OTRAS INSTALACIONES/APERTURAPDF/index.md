@@ -27,26 +27,36 @@ En el perfil de la persona a configurar seleccionar un archivo PDF luego presion
 
 
 
-![img](../../../images/AperturaPdf/aperturapdf1.jpg)
-
+![img](../../../images/aperturaPDF/aperturapdf1.jpg)
 
 
 2. se pude descargar del sitio https://www.bullzip.com/products/pdf/download.php, la versión Community Edition.
 
 3. Realizar la instalación por defecto, y en la instancia de Dependencias, descargar todas.
 
-![img](../../../images/AperturaPdf/aperturapdf2.jpg)
+![img](../../../images/BullZip/bullzip2.jpg)
 
 4. Completar la instalación yproceder a la configuración.
 
-![img](../../../images/AperturaPdf/aperturapdf3.jpg)
+![img](../../../images/BullZip/bullzip3.jpg)
 
 Configuración de las OPCIONES de BullzipTerminada la instalación proceder a configurar las opciones de Bullzip. Acceder desde el menúde inicio a
 
-![img](../../../images/AperturaPdf/aperturapdf4.jpg)
+![img](../../../images/BullZip/bullzip4.jpg)
 
 1. En la pestaña General, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
 
 
-![img](../../../images/AperturaPdf/aperturapdf5.jpg)
+![img](../../../images/BullZip/bullzip5.jpg)
 
+2. En la pestaña Diálogos:
+
+![img](../../../images/BullZip/bullzip6.jpg)
+
+3. En la pestaña Acciones, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
+
+![img](../../../images/BullZip/bullzip7.jpg)
+
+Concluir con “Aplicar”y “Aceptar”
+
+![img](../../../images/BullZip/bullzip8.jpg)
