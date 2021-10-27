@@ -18,45 +18,40 @@ Problema de la vista de documentos mediante la transacción FB02 en SAP.
 
 ## Documentación Técnica
 
-Por default cualquier perfil de usuario de Windows 10 tiene por defecto la apertura de los archivos PDF por el navegador predeterminado, en este caso el Microsoft Edge.
-Y lo más recomendable es predeterminar que el archivo .PDF sea abierto en forma automática por el Acrobat Reader de la siguiente forma:
+Para que el archivo ".PDF" sea abierto en forma automática por el Acrobat Reader de la siguiente forma:
 
-En el perfil de la persona a configurar seleccionar un archivo PDF luego presionar el botón Propiedades y luego seleccionar botón Cambiar 
-
+1. En el perfil de la persona a configurar seleccionar un archivo PDF luego presionar el botón Propiedades y luego seleccionar botón Cambiar .
 
 
+![img](../../../images/AperturaPDF/aperturapdf1.jpg)
 
 
-![img](../../../images/aperturaPDF/aperturapdf1.jpg)
+2. Luego seleccionamos la opción Adobe Acrobat Reader y después seleccionar botón Aceptar para grabar los cambios.
 
 
-2. se pude descargar del sitio https://www.bullzip.com/products/pdf/download.php, la versión Community Edition.
-
-3. Realizar la instalación por defecto, y en la instancia de Dependencias, descargar todas.
-
-![img](../../../images/BullZip/bullzip2.jpg)
-
-4. Completar la instalación yproceder a la configuración.
-
-![img](../../../images/BullZip/bullzip3.jpg)
-
-Configuración de las OPCIONES de BullzipTerminada la instalación proceder a configurar las opciones de Bullzip. Acceder desde el menúde inicio a
-
-![img](../../../images/BullZip/bullzip4.jpg)
-
-1. En la pestaña General, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
+![img](../../../images/AperturaPDF/aperturapdf2.jpg)
 
 
-![img](../../../images/BullZip/bullzip5.jpg)
+3. Una vez finalizado cerrar el explorador de Windows.
 
-2. En la pestaña Diálogos:
+Luego en el Front End de SAP ejecutamos las transacción FB02 y realizamos la prueba de visualización :
 
-![img](../../../images/BullZip/bullzip6.jpg)
 
-3. En la pestaña Acciones, sólo dejar seleccionada la opción “Recordarla última carpeta utilizada”
+![img](../../../images/AperturaPDF/aperturapdf3.jpg)
 
-![img](../../../images/BullZip/bullzip7.jpg)
 
-Concluir con “Aplicar”y “Aceptar”
+4. En la siguiente pantalla le damos botón Permitir para visualizar el documento seleccionado.
 
-![img](../../../images/BullZip/bullzip8.jpg)
+
+![img](../../../images/AperturaPDF/aperturapdf4.jpg)
+
+
+5. En la siguiente pantalla se ve en evidencia el contenido del documento PDF mediante el programa de Adobe Acrobat Reader DC sin utilizar el navegador Edge.
+
+Importante : Hay que tener en cuenta que la primera apertura de visualizacion de los documentos PDF cuando se enciende el ordenador diariamente puede tardar unos segundos y la segunda visualizacion deberia ser rapida debido a que el programa quedo en cache de memoria.
+
+Y por ultimo la opcion mas recomendable a futuro y según mi experiencia sobre el producto es tener instalado en los ordenadores que disponen SAP en Windows 10 unidades de DISCO SOLIDO (SDD) con eso se garantiza la velocidad y performance al momento de procesar datos
+
+
+![img](../../../images/AperturaPDF/aperturapdf5.jpg)
+
