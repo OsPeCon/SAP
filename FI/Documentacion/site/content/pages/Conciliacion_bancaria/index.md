@@ -26,20 +26,138 @@ Se bajan los movimientos del banco mediante un programa externo (usuario APAGANO
 
 1) Se ejecuta en SAP el Programa **ZCONCILIA** (Trx. ZDAT),  el cual importa el archivo TXT  generado en el paso anterior.
 
+* ```
+  Fecha de movimiento:  se graba en la fecha de documento
+  ```
+* ```
+  Fecha VAlor: se graba en la fecha valor
+  ```
+
+* ```
+  Fecha de proceso: no se graba en el documento
+  ```
+
+Esta transaccion contabiliza las compensaciones de los bancos y los movimientos de gastos. 
+
+Para que estas contabilizaciones sean posibles, deben estar debidamente configuradas las siguientes tablas y transacciones:
+
+***
 ```
-Fecha de movimiento:  se graba en la fecha de documento
+ZCONCILIA
 ```
 
+*** **– actualizable por el usuario:** Indica los asientos contables a realizar y la Regla de contabilización, según cuenta
+		bancaria y operación externa. 
 
+**
 ```
-Fecha VAlor: se graba en la fecha valor
-```
-
-
-```
-Fecha de proceso: no se graba en el documento
+ZREGLACONTAB
 ```
 
+**  **– actualizable por el usuario:** Indica la transacción funcional a ejecutar según la Regla de contabilización.
+
+***
+```
+ZCODEX
+```
+
+*** : Códigos externos Datanet con sus características (debe/ haber, tipo operación, etc.) . Actualizable por usuario con la Trx. 			ZCODEX
+
+***
+```
+ZCTABANK
+```
+
+*** : Contiene los datos de Cuentas bancarias en bancos propios. Si hay una “X” en el campo Ignora, esto hace que la 		cuenta no sea procesada. Actualizable por Sistemas con la Trx. SM3
+
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"Albertus Medium";
+	mso-font-alt:"Century Gothic";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:7 0 0 0 147 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"Encabezado Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"Pie de página Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+span.EncabezadoCar
+	{mso-style-name:"Encabezado Car";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Encabezado;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+span.PiedepginaCar
+	{mso-style-name:"Pie de página Car";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Pie de página";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.9pt 36.85pt 2.0cm 2.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;
+	mso-footnote-position:beneath-text;}
+-->
+
+Si se realiza cualquier cambio en ZCODEX o ZCUENTABANK, el usuario deberá actualizar ZCONCILIA.
 
 <!--
  /* Font Definitions */
@@ -251,71 +369,12 @@ No existen casos a la fecha
 Transacción: ZDAT
 Programa: ZCONCILIA
 
-Pantalla de Selección:
+Antes de procesar hacer llamada a la tabla ZDATANET001 y chequear fecha de proceso.
 
-* Sociedad:
-* Doc. Pago rechazado:  validar que se trate de clase de documento de pago KZ o ZP
-* Ejercicio:
-* Motivo del canje (18 caracteres)
-* Tipo ejecucion BI: Modo A permite visualizar las pantallas, en modo N invisible y E solo errores.
+Si existe fecha de proceso del dia anterior, no procesar el archivo, sino dar una advertencia: "ya se ha procesado fecha XX.XX.XXX".
 
-Tomar del documento de pago indicado:
+En la cuetna, no contemplar sabados, domingos ni feriados.
 
-- Proveedor (KOART = K)
-- Cuenta contable (para posición BSEG-KOART = S y BSEG-QSSKZ  = vacío)
+Crear reporte a tabla ZDATANET001 con visualizacion de fecha de proceso.
 
-Call Transaction a Transaction FB01
-
-Clase de documento a generar KS
-
-Posición 1:
-Clave contabilización 34 / Proveedor / Clave Ref1:  doc pago rechazado
-
-Posición 2:
-Clave contabilización 50 /
-Cuenta de mayor a determinar por tabla T012K (CON EXCEPCION *)
-
-Llamada a tabla T012K (para determinar la contrapartida del asiento del canje)
-
-```
--Si el asiento tiene cuenta T012K-HKONT con ID 00002, entonces se 							usa T012K-HKONT de ID 00003
-
--Si el asiento tiene cuenta T012K-HKONT con ID 00005, entonces se usa T012K-HKONT de ID 00006
-
-EXCEPCION (*): Si T012K-HKONT=1101021414 o 1101021394 entonces se usa T012K-HKONT de ID 00012
-```
-
-VALIDACIONES
-
-SOLO CANJEAR  en el caso en que ya se encuentre la OP liberada o compensada y SIN EXTRACTO BANCARIO (1)
-
-NO CANJEAR cuando:
-
-- No esta liberado (2)
-- Esta liberado pero tiene conciliacion bancaria (3). Esta validacion solo realizarla para Banco   HBKID = 93000 para BUKRS = 0100, HBKID = 95000 para BUKRS = 0200
-- La OP esta anulada, es decir BKPF = STBLG es distinto de vacio. Mensaje de error: “La OP se encuentra anulada con doc BKPF = STBLG
-
-Especicacion de la validacion para hacer el canje:
-
-Ingresar a BSEG con SOC y BELNR = doc de pago y clase de cuenta KOART = “S”.
-
-Si para ese registro el campo BSEG-AUGBL es distinto de vacio, hacer un segundo ingreso a la BSEG con
-Soc, BELNR = valor encontrado en BSEG-AUGBL y BSEG-BSCHL = 50. Si para ese registro BSEG-AUGBL es vacio, ENTONCES LIBERAR. (1)
-
-```
-    -Si ese campo es distinto de vacio (3) NO LIBERAR y arrojar el siguiente error: “la OP no puede canjearse ya que se encuentra conciliada con Documento XXXXXXXX” siendo xxxxx el valor que se encuentra en BSEG-AUGBL.
-```
-
--Si BSEG-AUGBL es vacio,  (2) entonces arrojar mensaje de error: “la OP no puede canjearse ya que aun no se encuentra liberada.
-
-Validacion de que el canje no este realizado.
-
-Validacion de Sociedad.
-
-Validacion de Ejercicio.
-
-Validacion de O.P. anulada.
-
-Validacion de O.P. ya canjeada.
-
-**Para canje manual no existe documentacion tecnica**
+---
