@@ -60,16 +60,19 @@ No existen casos a la fecha
 
 **Para Canje Automatico:**
 
-*Transacción: ZDAT*
-*Programa: ZCONCILIA*
+Transacción: ZDAT
 
-1. Se bajan los movimientos del banco mediante un programa externo (usuario APAGANO1) y se  genera un archivo txt llamado DNCTAS en el disco rígido del usuario. El usuario debe borrar este txt pues de lo contrario se van generando distintos txt con numeros correlativos.
+Programa: ZCONCILIA
 
-2. Se ejecuta en SAP el Programa ZCONCILIA que realiza los siguientes pasos:
+Se bajan los movimientos del banco mediante un programa externo (usuario APAGANO) y se  genera un archivo txt llamado DNCTAS en el
+disco rígido del usuario. El usuario debe borrar este txt pues de lo contrario se van generando distintos txt con nros. Correlativos.
 
-* Importa el archivo TXT  generado en el paso anterior.
+Se ejecuta en SAP el Programa ZCONCILIA que realiza los siguientes
+pasos:
 
-	Formato de Archivo txt:
+Importa el archivo TXT  generado en el paso anterior.
+
+Formato de Archivo txt:
 
 | **Campo**         | **Longitud** |
 | ----------------------- | ------------------ |
@@ -93,41 +96,43 @@ No existen casos a la fecha
 | NºCta.Bancaria UOCRA   |                    |
 | 52568/ Ospecon 58726    | 17                 |
 
-* Guarda en \uocrafs\ datanet\ backup, una copia del archivo TXT, tal cual lo envió el banco. Este archivo no se pisa sino que se guardan todos y se zipea anualmente para guardar la información compactada.
+Guarda en \uocrafs\ datanet\ backup, una copia del archivo TXT, tal cual lo envió el banco. Este archivo no se pisa sino que se guardan todos y se zipea anualmente para guardar la información compactada.
 
-* Guarda en la tabla  “ZDATANET001” todos los movimiento tipo “M” y tipo “V”. Estos movimientos se depuran anualmente en forma manual, por parte de Tecnología de la Información.
+Guarda en la tabla  “ZDATANET001” todos los movimiento tipo “M” y tipo “V”. Estos movimientos se depuran
+anualmente en forma manual, por parte de Tecnología de la Información.
 
-	La  tabla ZDATANET001, que es un reflejo del txt de datanet, contiene 3 Fechas:
+La  tabla ZDATANET001, que es un reflejo del txt de datanet, contiene 3 Fechas:
 
-	- [ ] Fecha movimiento (FECHA_MOV)
+    - [ ] Fecha movimiento (FECHA_MOV)
 
-	- [ ] Fecha Valor           (FECHA_VALOR)
+    - [ ] Fecha Valor           (FECHA_VALOR)
 
-	- [ ] Fecha Proceso       (FECHA_PROCESO)
+    - [ ] Fecha Proceso       (FECHA_PROCESO)
 
-* Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
+Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
 
-	- [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
+    - [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
 
-	- [ ] Fecha de contabilización (BUDAT): toma la FECHA_VALOR.
+    - [ ] Fecha de contabilización (BUDAT): toma la FECHA_VALOR.
 
-	- [ ] Periodo de Liquidación (ABPER): toma la FECHA_MOV, y la transforma en año/ mes.
+    - [ ] Periodo de Liquidación (ABPER): toma la FECHA_MOV, y la transforma en año/ mes.
 
-	- [ ] Fecha valor (VALUT): toma la FECHA_VALOR
+    - [ ] Fecha valor (VALUT): toma la FECHA_VALOR
 
-	- [ ] La FECHA_PROCESO no se graba en ningún campo.
+    - [ ] La FECHA_PROCESO no se graba en ningún campo.
 
-* Recorre la tabla del punto anterior y mediante la consulta a la tabla “ZCONCILIA,” 	realiza los asientos correctos.
+Recorre la tabla del punto anterior y mediante la consulta a la tabla “ZCONCILIA,” realiza los asientos correctos.
 
-* Las transacciones que ejecuta el programa son F-51 o F-02 según la tabla “ZREGLACONTAB”
+Las transacciones que ejecuta el programa son F-51 o F-02 según la tabla “ZREGLACONTAB”
 
-* Guarda en \uocrafs\ datanet\ log una copia del log de errores generado.
+Guarda en \uocrafs\ datanet\ log una copia del log de errores generado.
 
-* Mediante la Transacción ZLOG se visualiza el LOG generado.
+Mediante la Transacción ZLOG se visualiza el LOG generado.
 
 **Detalle técnico de las TABLAS creadas:**
 
-ZCONCILIA: Actualizable por usuario.
+ZCONCILIA:
+Actualizable por usuario.
 Indica los Asientos contables a realizar y la Regla de contabilización, según cuenta bancaria y operación externa.
 
 ZREGLACONTAB:
@@ -161,4 +166,5 @@ Si existe fecha de proceso del dia anterior, no procesar el archivo, sino dar un
 
 Crear reporte a tabla ZDATANET001 con visualizacion de fecha de proceso.
 
-La fecha de Proceso de Datanet es siempre un día antes de la actual.
+La fecha de Proceso de
+Datanet es siempre un día antes de la actual.
