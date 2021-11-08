@@ -63,15 +63,14 @@ Transacción: ZDAT
 
 Programa: ZCONCILIA
 
-Se bajan los movimientos del banco mediante un programa externo (usuario APAGANO) y se  genera un archivo txt llamado DNCTAS en el
+1. Se bajan los movimientos del banco mediante un programa externo (usuario APAGANO) y se  genera un archivo txt llamado DNCTAS en el
 disco rígido del usuario. El usuario debe borrar este txt pues de lo contrario se van generando distintos txt con nros. Correlativos.
 
-Se ejecuta en SAP el Programa ZCONCILIA que realiza los siguientes
-pasos:
+2. Se ejecuta en SAP el Programa ZCONCILIA que realiza los siguientes pasos:
 
-Importa el archivo TXT  generado en el paso anterior.
+* Importa el archivo TXT  generado en el paso anterior.
 
-Formato de Archivo txt:
+    Formato de Archivo txt:
 
 | **Campo**                            | **Longitud** |
 | ------------------------------------------ | ------------------ |
@@ -91,12 +90,12 @@ Formato de Archivo txt:
 | Código Depositante                        | 8                  |
 | NºCta.Bancaria UOCRA 52568/ Ospecon 58726 | 17                 |
 
-Guarda en \uocrafs\ datanet\ backup, una copia del archivo TXT, tal cual lo envió el banco. Este archivo no se pisa sino que se guardan todos y se zipea anualmente para guardar la información compactada.
+* Guarda en \uocrafs\ datanet\ backup, una copia del archivo TXT, tal cual lo envió el banco. Este archivo no se pisa sino que se guardan todos y se zipea anualmente para guardar la información compactada.
 
-Guarda en la tabla  “ZDATANET001” todos los movimiento tipo “M” y tipo “V”. Estos movimientos se depuran
+* Guarda en la tabla  “ZDATANET001” todos los movimiento tipo “M” y tipo “V”. Estos movimientos se depuran
 anualmente en forma manual, por parte de Tecnología de la Información.
 
-La  tabla ZDATANET001, que es un reflejo del txt de datanet, contiene 3 Fechas:
+* La  tabla ZDATANET001, que es un reflejo del txt de datanet, contiene 3 Fechas:
 
 ```
 - [ ] Fecha movimiento (FECHA_MOV)
@@ -120,13 +119,13 @@ Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
 - [ ] La FECHA_PROCESO no se graba en ningún campo.
 ```
 
-Recorre la tabla del punto anterior y mediante la consulta a la tabla “ZCONCILIA,” realiza los asientos correctos.
+* Recorre la tabla del punto anterior y mediante la consulta a la tabla “ZCONCILIA,” realiza los asientos correctos.
 
-Las transacciones que ejecuta el programa son F-51 o F-02 según la tabla “ZREGLACONTAB”
+* Las transacciones que ejecuta el programa son F-51 o F-02 según la tabla “ZREGLACONTAB”
 
-Guarda en \uocrafs\ datanet\ log una copia del log de errores generado.
+* Guarda en \uocrafs\ datanet\ log una copia del log de errores generado.
 
-Mediante la Transacción ZLOG se visualiza el LOG generado.
+* Mediante la Transacción ZLOG se visualiza el LOG generado.
 
 **Detalle técnico de las TABLAS creadas:**
 
