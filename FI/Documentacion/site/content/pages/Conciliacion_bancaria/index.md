@@ -47,7 +47,6 @@ El Programa ZCONCILIA Guarda en \uocrafs\ datanet\ backup, una copia del archivo
 
 Ademas, se guarda un log de las contabilizaciones y errores del proceso.
 
-
 ### Casos / Preguntas frecuentes
 
 No existen casos a la fecha
@@ -74,27 +73,23 @@ Importa el archivo TXT  generado en el paso anterior.
 
 Formato de Archivo txt:
 
-| **Campo**         | **Longitud** |
-| ----------------------- | ------------------ |
-| Tipo de registro        | 1                  |
-| Código de Banco        | 3                  |
-| Nº Cta. Corto          | 2                  |
-| Fecha Movimiento        | 8                  |
-| Fecha Valor             | 8                  |
-| Deb. Cred.              | 1                  |
-| Importe Movimiento      | 17                 |
-| (2)                     |                    |
-| Número de cheque o Nro |                    |
-| Lote Ebanking           | 12                 |
-| Código de Operación   | 3                  |
-| Fecha de Proceso        | 8                  |
-| blanco                  |                    |
-| Sin Contenido           | 3                  |
-| Desc.Movimiento         | 25                 |
-| Suc. Origen             | 5                  |
-| Código Depositante     | 8                  |
-| NºCta.Bancaria UOCRA   |                    |
-| 52568/ Ospecon 58726    | 17                 |
+| **Campo**                            | **Longitud** |
+| ------------------------------------------ | ------------------ |
+| Tipo de registro                           | 1                  |
+| Código de Banco                           | 3                  |
+| Nº Cta. Corto                             | 2                  |
+| Fecha Movimiento                           | 8                  |
+| Fecha Valor                                | 8                  |
+| Deb. Cred.                                 | 1                  |
+| Importe Movimiento                         | 17 (2))            |
+| Número de cheque o Nro Lote Ebanking      | 12                 |
+| Código de Operación                      | 3                  |
+| Fecha de Proceso                           | 8 blanco           |
+| Sin Contenido                              | 3                  |
+| Desc.Movimiento                            | 25                 |
+| Suc. Origen                                | 5                  |
+| Código Depositante                        | 8                  |
+| NºCta.Bancaria UOCRA 52568/ Ospecon 58726 | 17                 |
 
 Guarda en \uocrafs\ datanet\ backup, una copia del archivo TXT, tal cual lo envió el banco. Este archivo no se pisa sino que se guardan todos y se zipea anualmente para guardar la información compactada.
 
@@ -103,23 +98,27 @@ anualmente en forma manual, por parte de Tecnología de la Información.
 
 La  tabla ZDATANET001, que es un reflejo del txt de datanet, contiene 3 Fechas:
 
-    - [ ] Fecha movimiento (FECHA_MOV)
+```
+- [ ] Fecha movimiento (FECHA_MOV)
 
-    - [ ] Fecha Valor           (FECHA_VALOR)
+- [ ] Fecha Valor           (FECHA_VALOR)
 
-    - [ ] Fecha Proceso       (FECHA_PROCESO)
+- [ ] Fecha Proceso       (FECHA_PROCESO)
+```
 
 Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
 
-    - [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
+```
+- [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
 
-    - [ ] Fecha de contabilización (BUDAT): toma la FECHA_VALOR.
+- [ ] Fecha de contabilización (BUDAT): toma la FECHA_VALOR.
 
-    - [ ] Periodo de Liquidación (ABPER): toma la FECHA_MOV, y la transforma en año/ mes.
+- [ ] Periodo de Liquidación (ABPER): toma la FECHA_MOV, y la transforma en año/ mes.
 
-    - [ ] Fecha valor (VALUT): toma la FECHA_VALOR
+- [ ] Fecha valor (VALUT): toma la FECHA_VALOR
 
-    - [ ] La FECHA_PROCESO no se graba en ningún campo.
+- [ ] La FECHA_PROCESO no se graba en ningún campo.
+```
 
 Recorre la tabla del punto anterior y mediante la consulta a la tabla “ZCONCILIA,” realiza los asientos correctos.
 
