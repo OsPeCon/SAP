@@ -12,7 +12,7 @@ eleventyNavigation:
 
 ### Descripcion breve del proceso:
 
-E
+![img](../content/images/Listado de Cuentas/hrldc1.jpg)
 
 
 
