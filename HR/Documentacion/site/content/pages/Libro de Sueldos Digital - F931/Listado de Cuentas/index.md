@@ -1,20 +1,25 @@
 ---
-title: Listado de Cuentas.
+title: Libro de Sueldos Digital.
 date: Last Modified
-permalink: /Listado de Cuentas/
+permalink: /Libro de Sueldos Digital - F931/
 eleventyNavigation: 
-    key: Listado de Cuentas
+    key: librosdesueldos
     order: 1
-    title: Listado de Cuentas.
+    title: Libro de Sueldos Digital.
 ---
 
 
 
 ### Descripcion breve del proceso:
 
-![img](../images/Libro_de_sueldos_Digital_F931/1630424321657.png)
+Esta funcionalidad será utilizada para completar las nóminas
+equivalentes de la AFIP con las que estamos utilizando en SAP, como así también
+tildar para cada nómina el casillero que corresponda de los distintos conceptos.
+Una vez subida y conformada esta información con la AFIP se está habilitada para
+utilizar el LSD.
 
-![img](../content/images/Listado_de_Cuentas/hrldc1.jpg)
+En base a la tarea detallada anteriormente se deberá cargar en
+forma mensual la liquidación de los sueldos en la AFIP.
 
 
 
@@ -33,7 +38,8 @@ Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casil
 
 El sistema muestra lasiguiente pantalla:
 
-![img](../content/images/Libro_de_Sueldos_Digital_F931/1630424321657.png)
+![img](../content/images/Listado_de_Cuentas/hrldc1.jpg)
+
 
 
 Datos a integrar:
