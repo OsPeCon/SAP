@@ -7,9 +7,6 @@ eleventyNavigation:
     order: 1
     title: Listado de Cuentas.
 ---
-
-
-
 ### Descripcion breve del proceso:
 
 Esta funcionalidad será utilizada para completar las nóminas
@@ -21,12 +18,9 @@ utilizar el LSD.
 En base a la tarea detallada anteriormente se deberá cargar en
 forma mensual la liquidación de los sueldos en la AFIP.
 
-
-
 ## Proceso paso a paso :
 
-
-**Metodologia** 
+**Metodologia**
 
 Transacción  :   PC00_M29_CLSD
 
@@ -38,9 +32,7 @@ Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casil
 
 El sistema muestra lasiguiente pantalla:
 
-![img](../content/images/Listado_de_Cuentas/hrldc1.jpg)
-
-
+![img](../../././images/Listado_de_Cuentas/hrldc1.jpg)
 
 Datos a integrar:
 
@@ -55,12 +47,10 @@ icono “verificar entradas” como se muestra en la siguiente pantalla:
 
 ![img](../content/images/Libro_de_Sueldos_Digital_F931/1630432400509.png)
 
-
 Si no hay errores para ir guardando la información se deberá dar un clic en el ícono de Generar TXT de acuerdo a lo
 siguiente:
 
 ![](file:///C:\Users\mprager\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432478029.png)
-
 
 1 - A continuación se procederá a guardar el mismo:
 ![img](../content/images/Libro_de_Sueldos_Digital_F931/1630432503637.png)
@@ -76,7 +66,6 @@ acuerdo a lo siguiente:
 
 ![](../content/images/Libro_de_Sueldos_Digital_F931/1630432556419.png)
 
-
 Luego de incorporada nueva información y para
 guardar la misma se deberá proceder de acuerdo a lo detallado en el
 punto 1.
@@ -86,8 +75,7 @@ atención en hacer una correcta equivalencia para evitar errores al procesar la
 información en el aplicativo de la AFIP para generar en forma correcta el
 archivo de la Seguridad Social y efectuar el pago de aportes y contribuciones.
 
-
-Detalle del proceso: 
+Detalle del proceso:
 
 Para la emisión del Libro Digital se efectuará en forma mensual este proceso en donde
 se detallan los distintos conceptos liquidados a los empleados
@@ -106,8 +94,6 @@ que la persona ha sido procesada en forma correcta:
 Al abrir el detalle de los distintos conceptos el sistema muestra la
 siguiente información
 
-
-
 En el Reg 1 “Datos referenciales del envío” Nro. De CUIT del empleador
 
 En el Reg 2  “Datos de la liquidación”
@@ -120,7 +106,6 @@ en Registro 3 “Detalle de los conceptos” muestra el detalle la liquidación 
 se muestra a continuación:
 
 ![](../content/images/Libro_de_Sueldos_Digital_F931/1630432678100.png)![](../content/images/Libro_de_Sueldos_Digital_F931/1630432678100.png)
-
 
 Al dar clic en Regi 4 “Datos del trabajador” el sistema muestra la
 siguiente información:
@@ -146,7 +131,6 @@ información:
 
 ![](../content/images/Libro_de_Sueldos_Digital_F931/1630432773888.png)
 
-
 Hacer
 el Download para guardar el archivo y subirlo a la AFIP.
 
@@ -170,8 +154,6 @@ Manual Libro de Sueldos Digital  de
 la AFIP
 
 Manual de Libro Digital de empresa especializada en HR
-
-
 
 ### Casos / Preguntas frecuentes
 
