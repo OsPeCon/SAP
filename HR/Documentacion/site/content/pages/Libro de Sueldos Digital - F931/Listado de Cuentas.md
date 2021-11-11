@@ -12,10 +12,9 @@ eleventyNavigation:
 
 ### Descripcion breve del proceso:
 
-![img](../content/images/Listado de Cuentas/hrldc1.jpg)
-![img](../content/images/Listado de Cuentas/hrldc5.jpg)
+![img](../images/Libro_de_sueldos_Digital_F931/1630424321657.png)
 
-![img](Listado de Cuentas/hrldc5.jpg)
+![img](../content/images/Listado_de_Cuentas/hrldc1.jpg)
 
 
 
