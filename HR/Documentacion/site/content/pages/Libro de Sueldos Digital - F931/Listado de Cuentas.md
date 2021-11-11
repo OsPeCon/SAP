@@ -5,7 +5,7 @@ permalink: /Listado de Cuentas/
 eleventyNavigation: 
     key: Listado de Cuentas
     order: 1
-    title: Listad de Cuentas.
+    title: Listado de Cuentas.
 ---
 
 
@@ -13,6 +13,9 @@ eleventyNavigation:
 ### Descripcion breve del proceso:
 
 ![img](../content/images/Listado de Cuentas/hrldc1.jpg)
+![img](../content/images/Listado de Cuentas/hrldc5.jpg)
+
+![img](Listado de Cuentas/hrldc5.jpg)
 
 
 
