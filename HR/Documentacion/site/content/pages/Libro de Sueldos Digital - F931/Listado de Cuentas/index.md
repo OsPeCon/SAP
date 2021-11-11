@@ -1,11 +1,11 @@
 ---
-title: Libro de Sueldos Digital.
+title: Listado de Cuentas.
 date: Last Modified
-permalink: /Libro de Sueldos Digital - F931/
+permalink: /Listado de Cuentas/
 eleventyNavigation: 
-    key: librosdesueldos
+    key: listadodecuentas
     order: 1
-    title: Libro de Sueldos Digital.
+    title: Listado de Cuentas.
 ---
 
 
