@@ -38,7 +38,7 @@ Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casil
 
 El sistema muestra lasiguiente pantalla:
 
-![img](../content/images/Libro_de_Sueldos_Digital_F931/1630424321657.jpg)
+![img](../content/images/Libro_de_Sueldos_Digital_F931/1630424321657.png)
 
 
 
