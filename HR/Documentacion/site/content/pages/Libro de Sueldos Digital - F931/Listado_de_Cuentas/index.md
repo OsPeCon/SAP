@@ -7,7 +7,7 @@ eleventyNavigation:
     order: 1
     title: Listado de Cuentas.
 ---
-### Descripcion breve del proceso:
+### Descripción breve del proceso:
 
 Esta funcionalidad será utilizada para determinar los empleados que no tienen incorporado en el sistema el número de cuenta o el CBU al que se debe transferir el importe del sueldo neto. En base al mismo el Sector de Sueldos deberá incorporar a los legajos que no tengan esta información ingresando los datos correspondientes en el sistema SAP.
 
@@ -27,7 +27,7 @@ Al ejecutar la transacción el sistema muestra la siguiente pantalla:
 
 ![img](../content/images/Listado_de_cuentas/hrldc2.jpg)
 
-La información podrà exportarse a excel y filtrar el mismo de acuerdo a la informacón que se requiera:
+La información podrá exportarse a excel y filtrar el mismo de acuerdo a la informacón que se requiera:
 
 ![img](../content/images/Listado_de_cuentas/hrldc3.jpg)
 
@@ -50,7 +50,7 @@ Información a ingresar en esta pantalla:
 DE: fecha a partir de la cual tiene vigencia la información
 CL Clav. Datos Bancarios: Seleccionar la opción Relación bancaria principal
 RECEPTOR: Nombre y apellido del empleado
-CODIGO POSTAL Y LOCALIDAD: còdigo correspondiente y nombre de la localidad
+CODIGO POSTAL Y LOCALIDAD: código correspondiente y nombre de la localidad
 PAIS RECEPTOR Y BANCO. Argentina en todos los casos
 CLAVE DE BANCO: el còdigo que corresponda 093 en el caso del Banco La Pampa
 CUENTA BANCARIA Y CLASE: número de cuenta y la clase en este caso CA caja de ahorros
@@ -63,11 +63,6 @@ Al finalizar se debe grabar para que los datos queden incorporados en el sistema
 
 ### Casos / Preguntas frecuentes
 
-No existen casos a la fecha
-
----
-
----
 
 ## Documentacion Técnica
 
