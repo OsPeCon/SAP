@@ -9,28 +9,12 @@ eleventyNavigation:
 ---
 ### Descripcion breve del proceso:
 
-Esta funcionalidad será utilizada para completar las nóminas
-equivalentes de la AFIP con las que estamos utilizando en SAP, como así también
-tildar para cada nómina el casillero que corresponda de los distintos conceptos.
-Una vez subida y conformada esta información con la AFIP se está habilitada para
-utilizar el LSD.
+Esta funcionalidad será utilizada para determinar los empleados que no tienen incorporado en el sistema el número de cuenta o el CBU al que se debe transferir el importe del sueldo neto. En base al mismo el Sector de Sueldos deberá incorporar a los legajos que no tengan esta información ingresando los datos correspondientes en el sistema SAP.
 
-En base a la tarea detallada anteriormente se deberá cargar en
-forma mensual la liquidación de los sueldos en la AFIP.
 
 ## Proceso paso a paso :
 
-**Metodologia**
-
-Transacción  :   PC00_M29_CLSD
-
-Datos a ingresar:
-
-Código de la AFIP para LSD: se seleccionará el equivalente del mismo para el detalle de la
-
-Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casilleros que correspondan de los distintos conceptos.
-
-El sistema muestra lasiguiente pantalla:
+Transaccion ZCUENTASBANCO 
 
 ![img](../../images/Listado_de_Cuentas/hrldc1.jpg)
 
