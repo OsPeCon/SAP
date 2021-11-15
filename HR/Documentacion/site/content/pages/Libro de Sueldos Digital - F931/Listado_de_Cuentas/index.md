@@ -32,7 +32,7 @@ Código nómina de SAP que  figura en la pantalla y de deberá tildar los  casil
 
 El sistema muestra lasiguiente pantalla:
 
-![img](../../././images/Listado_de_Cuentas/hrldc1.jpg)
+![img](../../images/Listado_de_Cuentas/hrldc1.jpg)
 
 Datos a integrar:
 

@@ -1,7 +1,7 @@
 ---
 title: Decreto 792-20.
 date: Last Modified
-permalink: /Dectreto 792-20/
+permalink: /benefcio/
 eleventyNavigation:
     key: decreto79220
     order: 1
