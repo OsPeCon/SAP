@@ -71,7 +71,3 @@ No existen casos a la fecha
 
 ## Documentacion Técnica
 
-**En SAP:**
-
-* TRANSACCION: PC00_M29_CLSD - Asignacion de nominas a conceptos
-* TRANSACCION: PC00_M29_F931 - Generacion de Libro Digital
