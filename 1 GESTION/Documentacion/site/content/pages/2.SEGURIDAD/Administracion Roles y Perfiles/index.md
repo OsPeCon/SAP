@@ -45,7 +45,7 @@ Resumen: hoy creamos usuario prueba2 SU01 al cual le
 asignamos el rol compuesto “rs0100*nuevo*”  TX. PFCG y además creamos un
 rol simple llamado “TX. PFCG“as0100* y se asignó al rol compuesto.
 
-![img](../../../images/RolesyPerfiles/ryp4.jpg)
+![img](../content/images/RolesyPerfiles/ryp4.jpg)
 
 Solapa menú dentro de modificar roles se asignas las
 transacciones correspondientes para cada rol simple.
