@@ -9,9 +9,9 @@ eleventyNavigation:
 ---
 ## **IMPRESORAS**
 
-![img](../../../images/Impresoras/printsap1.jpg)
-![img](../../../images/Impresoras/printsap2.jpg)
-![img](../../../images/Impresoras/printsap3.jpg)
+![img](../content/images/Impresoras/printsap1.jpg)
+![img](../content/images/Impresoras/printsap2.jpg)
+![img](../content/images/Impresoras/printsap3.jpg)
 
-## Documentacion tecnica:
+npm start## Documentacion tecnica:
 ...
