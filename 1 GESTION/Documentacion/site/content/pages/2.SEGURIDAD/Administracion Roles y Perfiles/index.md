@@ -11,32 +11,29 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
-Se modifican Roles y Perfiles de usuarios. 
-Roles compuestos y roles simples. 
-
+Se modifican Roles y Perfiles de usuarios.
+Roles compuestos y roles simples.
 
 ## Proceso paso a paso:
-
 
 Siempre que se modifica un rol simple (se le modifica alguna
 tx.) hay que ir solapa autorizaciones y usuarios….(al estar símbolo en ROJO)
 
-
-![img](../../../images/RolesyPerfiles/ryp1.jpg)
+![img](../content/images/RolesyPerfiles/ryp1.jpg)
 
 Luego ir a lápiz de modificar y
 
-![img](../../../images/RolesyPerfiles/ryp2.jpg)
+![img](../content/images/RolesyPerfiles/ryp2.jpg)
 
 Hay que ingresar a los arboles del menú con símbolos
 amarillos o rojos.
 
 Si se repiten los sub nodos se puede eliminar el duplicado.
 
-![img](../../../images/RolesyPerfiles/ryp3.jpg)
+![img](../content/images/RolesyPerfiles/ryp3.jpg)
 
 Al grabar genera el perfil luego se presionar ENTER y por
-ultimo HAY QUE GENERAR “ CON LA RUEDITA ROJA Y BLANCA”
+ultimo HAY QUE GENERAR “ CON LA RUEDITA ROJA Y BLANCA ”
 
 Luego ir solapa usuario y hacer comparar usuario hasta que
 marque proceso en VERDE.
@@ -49,6 +46,5 @@ rol simple llamado “TX. PFCG“as0100* y se asignó al rol compuesto.
 
 Solapa menú dentro de modificar roles se asignas las
 transacciones correspondientes para cada rol simple.
-
 
 ## Documentación Técnica
