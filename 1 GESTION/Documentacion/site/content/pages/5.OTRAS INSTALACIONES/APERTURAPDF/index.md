@@ -21,21 +21,21 @@ Para que el archivo ".PDF" sea abierto en forma automática por el Acrobat Reade
 
 1. En el perfil de la persona a configurar seleccionar un archivo PDF luego presionar el botón Propiedades y luego seleccionar botón Cambiar .
 
-![img](../../../images/AperturaPDF/aperturapdf1.jpg)
+![img](../content/images/AperturaPDF/aperturapdf1.jpg)
 
 2. Luego seleccionamos la opción Adobe Acrobat Reader y después seleccionar botón Aceptar para grabar los cambios.
 
-![img](../../../images/AperturaPDF/aperturapdf2.jpg)
+![img](../content/images/AperturaPDF/aperturapdf2.jpg)
 
 3. Una vez finalizado cerrar el explorador de Windows.
 
 Luego en el Front End de SAP ejecutamos las transacción FB02 y realizamos la prueba de visualización :
 
-![img](../../../images/AperturaPDF/aperturapdf3.jpg)
+![img](../content/images/AperturaPDF/aperturapdf3.jpg)
 
 4. En la siguiente pantalla le damos botón Permitir para visualizar el documento seleccionado.
 
-![img](../../../images/AperturaPDF/aperturapdf4.jpg)
+![img](../content/images/AperturaPDF/aperturapdf4.jpg)
 
 5. En la siguiente pantalla se ve en evidencia el contenido del documento PDF mediante el programa de Adobe Acrobat Reader DC sin utilizar el navegador Edge.
 
@@ -43,4 +43,4 @@ Importante : Hay que tener en cuenta que la primera apertura de visualizacion de
 
 Y por ultimo la opcion mas recomendable a futuro sobre el producto, es tener instalado en los ordenadores que disponen SAP en Windows 10 unidades de DISCO SOLIDO (SDD) con eso se garantiza la velocidad y performance al momento de procesar datos
 
-![img](../../../images/AperturaPDF/aperturapdf5.jpg)
+![img](../content/images/AperturaPDF/aperturapdf5.jpg)
