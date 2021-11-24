@@ -13,5 +13,6 @@ eleventyNavigation:
 ![img](../content/images/Impresoras/printsap2.jpg)
 ![img](../content/images/Impresoras/printsap3.jpg)
 
-npm start## Documentacion tecnica:
+# ## Documentacion tecnica:
+
 ...
