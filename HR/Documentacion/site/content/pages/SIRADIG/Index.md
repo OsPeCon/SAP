@@ -13,6 +13,8 @@ eleventyNavigation:
 
 Instructivo para Ejecutar la nueva interfaz del SIRADIG
 
+## Proceso paso a paso:
+
 Transacción: ZARPY_TRX_NVA_SIRAD
 Programa: ZARPY_PRO_IN_OSP_SIRADIG
 Se ejecuta la Transacción : ZARPY_TRX_NVA_SIRAD y se muestra la siguiente pantalla:
@@ -24,33 +26,47 @@ Luego, se ingresan los datos:
 -	Nro de Personal
 -	Ruta Archivo, donde se encuentra el XML.
 
-imagen 2
+![img](../content/images/SIRADIG/s2.jpg)
 
 Primero lo ejecutamos en modo test, para verificar que no se encuentren errores en el archivo.
 Ejecutar  
+
+![img](../content/images/SIRADIG/s3.jpg)
+
 Vamos a log
 
-imagen 3
+![img](../content/images/SIRADIG/s4.jpg)
 
 Para este caso, no se encontraron errores, el log esta vacío:
 
-imagen4
+![img](../content/images/SIRADIG/s5.jpg)
 
 Ya podemos procesar sin el modo test, quitamos el check:
 
-imagen5
+![img](../content/images/SIRADIG/s6.jpg)
 
 Y ejecutamos  
 Se muestra el siguiente reporte
 
-imagen 6
+![img](../content/images/SIRADIG/s7.jpg)
 
 El campo Acción, indica: 
 A – Cuando se van a dar de alta los registros.
 B – Se borran registros, en este caso, aparecen cuando se vuelve a reprocesar el archivo y se borran lo datos que ya estaban y se vuelven a crear. Es decir, que en el reporte se verán los registros a Borrar (B) y luego los registros a Insertar (A).
 Una vez que se verifican los valores, ejecutar:
 
-imagen 7
+![img](../content/images/SIRADIG/s8.jpg)
+
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
+
 
 
 
