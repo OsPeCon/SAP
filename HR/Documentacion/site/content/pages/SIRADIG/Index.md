@@ -8,4 +8,51 @@ eleventyNavigation:
     title: Siradig.
 ---
 # Tecnología de la Información
+
 ## SIRADIG
+
+Instructivo para Ejecutar la nueva interfaz del SIRADIG
+
+Transacción: ZARPY_TRX_NVA_SIRAD
+Programa: ZARPY_PRO_IN_OSP_SIRADIG
+Se ejecuta la Transacción : ZARPY_TRX_NVA_SIRAD y se muestra la siguiente pantalla:
+
+imagen 1 
+![img](../content/images/Listado_de_cuentas/hrldc1.jpg)
+
+Luego, se ingresan los datos:
+-	Sociedad,
+-	Nro de Personal
+-	Ruta Archivo, donde se encuentra el XML.
+
+imagen 2
+
+Primero lo ejecutamos en modo test, para verificar que no se encuentren errores en el archivo.
+Ejecutar  
+Vamos a log
+
+imagen 3
+
+Para este caso, no se encontraron errores, el log esta vacío:
+
+imagen4
+
+Ya podemos procesar sin el modo test, quitamos el check:
+
+imagen5
+
+Y ejecutamos  
+Se muestra el siguiente reporte
+
+imagen 6
+
+El campo Acción, indica: 
+A – Cuando se van a dar de alta los registros.
+B – Se borran registros, en este caso, aparecen cuando se vuelve a reprocesar el archivo y se borran lo datos que ya estaban y se vuelven a crear. Es decir, que en el reporte se verán los registros a Borrar (B) y luego los registros a Insertar (A).
+Una vez que se verifican los valores, ejecutar:
+
+imagen 7
+
+
+
+## Proceso paso a paso:
