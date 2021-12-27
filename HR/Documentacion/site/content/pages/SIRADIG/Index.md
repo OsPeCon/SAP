@@ -17,8 +17,7 @@ Transacción: ZARPY_TRX_NVA_SIRAD
 Programa: ZARPY_PRO_IN_OSP_SIRADIG
 Se ejecuta la Transacción : ZARPY_TRX_NVA_SIRAD y se muestra la siguiente pantalla:
 
-imagen 1 
-![img](../content/images/Listado_de_cuentas/hrldc1.jpg)
+![img](../content/images/SIRADIG/s1.jpg)
 
 Luego, se ingresan los datos:
 -	Sociedad,
