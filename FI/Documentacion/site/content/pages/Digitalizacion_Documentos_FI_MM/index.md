@@ -24,7 +24,7 @@ El programa está configurado para guardar los archivos según el perfil asociad
 \\uocrafs\SectorControldeobras\aprocesar
 \\uocrafs\SectorFinanzas\aprocesar
 
-![img](image/index/D1.jpg)
+![img](../image/D1.jpg)
 
 2SAP - DIGITALIZACION DE DOCUMENTOS: FACTURAS  - RECIBOS – PRESUPUESTOS
 
