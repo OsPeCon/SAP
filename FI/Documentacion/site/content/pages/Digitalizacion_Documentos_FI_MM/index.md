@@ -19,12 +19,12 @@ INSTALACION DE APLICATIVO PARA ESCANEAR
 
 El aplicativo .net se instala en el perfil del usuario a escanear. 
 \\uocradevnet\Librerias\Repositorios\SAPScanRecibos\Setup.exe
-El programa está configurado para guardar los archivos según el perfil asociado al grupo de trabajo (RSARRA = CONTABLE, 	VLOSCOCCO = FINANZAS, RKRAISKI=CONTROLDEOBRAS)
+El programa está configurado para guardar los archivos según el perfil asociado al grupo de trabajo (RSARRA = CONTABLE, VLOSCOCCO = FINANZAS, RKRAISKI=CONTROLDEOBRAS)
 \\uocrafs\SectorContable\aprocesar
 \\uocrafs\SectorControldeobras\aprocesar
 \\uocrafs\SectorFinanzas\aprocesar
 
-![img](../image/D1.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D1.jpg)
 
 2SAP - DIGITALIZACION DE DOCUMENTOS: FACTURAS  - RECIBOS – PRESUPUESTOS
 
