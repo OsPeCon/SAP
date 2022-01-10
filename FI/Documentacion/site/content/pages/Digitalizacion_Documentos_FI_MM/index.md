@@ -35,21 +35,21 @@ CONFIGURACION ESTANDAR
 
 Trx. SM31
 
-![img](image/index/D2.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D2.jpg)
 
 Modificamos el nombre a:             
 
-![img](image/index/D3.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D3.jpg)
 
 
 Trx. SM31
 
-![img](image/index/D4.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D4.jpg)
 
 
 En esta vista, agregamos la entrada para “crear anexo” que vemos en la vista anterior y la ponemos DESACTIVAMOS.
 
-![img](image/index/D5.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D5.jpg)
 
 
 Alta de Ruta destino Origen de archivos
@@ -66,11 +66,11 @@ COMPORTAMIENTO FUNCIONAL
 Desde la Trx. FB02 o FB03
 CREACION de Documento escaneado
 
-![img](image/index/D6.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D6.jpg)
 
 Te lleva a esta pantalla: 
 
-![img](image/index/D7.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D7.jpg)
 
 
 Título: por ejemplo Factura
@@ -80,15 +80,15 @@ Dirección: Click Derecho, Insertar Fichero.
 Mediante un acceso directo en el escritorio  que apunta al Servidor, se selecciona el documento escaneado
 
 
-![img](image/index/D8.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D8.jpg)
 
 VISUALIZACION de Documento escaneado
 
-![img](image/index/D9.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D9.jpg)
 
 Te lleva el o los documentos
 
-![img](image/index/D10.jpg)
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D10.jpg)
 
 CARPETAS/ NOMBRES ARCHIVOS/ FORMATO/ TAMAÑO
 
