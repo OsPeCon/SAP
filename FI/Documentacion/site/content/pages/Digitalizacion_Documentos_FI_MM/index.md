@@ -23,6 +23,8 @@ El programa está configurado para guardar los archivos según el perfil asociad
 \\uocrafs\SectorContable\aprocesar
 \\uocrafs\SectorControldeobras\aprocesar
 \\uocrafs\SectorFinanzas\aprocesar
+\\\\uocrafs\Intendencia\DigitalPrel\Listo\ 
+
 
 ![img](../content/images/Digitalizacion_Documentos_FI_MM/D1.jpg)
 
