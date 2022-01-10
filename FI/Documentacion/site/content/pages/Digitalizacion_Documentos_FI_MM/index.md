@@ -1,13 +1,13 @@
 ---
-title: PSTI.
+title: DIGITALIZACION.
 date: Last Modified
-permalink: /PSTI/
+permalink: /DIGITALIZACION/
 eleventyNavigation:
-    key: psti
+    key: digitalizacion
     order: 40
-    title: PSTI.
+    title: DIGITALIZACION.
 ---
-## **PSTI: Facturacion Adherentes**
+## **DIGITALIZACION DE DOCUMENTOS**
 
 **Descripción breve del proceso:**
 
