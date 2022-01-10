@@ -153,10 +153,15 @@ SRGBTBREL
 
 ## **Casos / Preguntas frecuentes**
 
-Caso 1:
 
-Caso 2:
 
----
+## **Documentación Técnica**
 
-## Documentación Técnica
+
+Cada vez que se cree una entrada z en la transacción FILE debería crearse una entrada con la tabla ZDIR_FILE.
+
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D11.jpg)
+
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D12.jpg)
+
+
