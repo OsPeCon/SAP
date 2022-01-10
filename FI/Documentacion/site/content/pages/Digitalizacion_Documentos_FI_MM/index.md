@@ -15,32 +15,137 @@ Emision , Impresion y envio de facturacion.
 
 ## Proceso paso a paso:
 
-1. Listado de Bajas: Trx. ZFI_BAJAS. Se informan los adherentes con 2 o más facturas vencidas. En el caso que sean 2, solo informa en el listado y en el caso que sean 3 además de informar realiza el bloqueo de dicho adherente.![img](image/index/1628705225985.png)
+INSTALACION DE APLICATIVO PARA ESCANEAR
 
-2. ZFI_ADHERENTE_FACT **– FACTURACION AUTOMATICA:                                                        **Una vez confirmado los clientes a facturar con menos de 3 meses de deuda, debemos ejecutar la trx.zfi_adherente_fact.![img](image/index/1628705242254.png)
+El aplicativo .net se instala en el perfil del usuario a escanear. 
+\\uocradevnet\Librerias\Repositorios\SAPScanRecibos\Setup.exe
+El programa está configurado para guardar los archivos según el perfil asociado al grupo de trabajo (RSARRA = CONTABLE, 	VLOSCOCCO = FINANZAS, RKRAISKI=CONTROLDEOBRAS)
+\\uocrafs\SectorContable\aprocesar
+\\uocrafs\SectorControldeobras\aprocesar
+\\uocrafs\SectorFinanzas\aprocesar
 
-3. Importe de Plan: Permite ingresar el valor a facturar dependiendo del tipo de plan que posee el adherente.                ![img](image/index/1628706183893.png)
+![img](image/index/1628705225985.png)
 
-4. Numero Documento Cliente permite ingresar los adherentes a facturar. Numero de Cuenta Anterior: Es el numero utilizado en el sistema anterio de facturacion ""NO SAP"".  Fecha de Facturacion: ingresar fecha de facturacion. Condicion de Pago: Z018 ""Fija"". Tipo de Ejecucion: Visualizacion, permite visualizar importe y datos del adherente a facturar. Ejecucion, se realiza la facturacion.
+2SAP - DIGITALIZACION DE DOCUMENTOS: FACTURAS  - RECIBOS – PRESUPUESTOS
 
-5. Factura Manual: Permite Facturar en forma manual a un adherente. En
-   caso de encontrarse un error en la facturación Automática, debemos facturar en
-   forma manual.
+Función para traer las órdenes de Pago a tener en cuenta y verificar cuales tiene recibo y cuales no:
+Z_VERIFICA_ATTACH_GOS (tanto para cheque como transferencia).
 
-6. **J1AMONITOR (ENVIO DE FACTURAS A AFIP PARA INGRESAR CAE A LA MISMA):** Permite enviar la facturacion generada a AFIP. ![](image/index/1628706349801.png)
+CONFIGURACION ESTANDAR
 
-**Sociedad:** 0100
+Trx. SM31
 
-**Numero de sucursal:**
-0007
+![img](image/index/1628705242254.png)
 
-7. **ZFI_ADH_MAIL**
+Modificamos el nombre a:             
 
-**(ENVIO DE MAIL E IMPRESIÓN DE FACTURA)**
+![img](image/index/1628706183893.png)
 
-La trx. zfi_adh_mail permite el envió
-de mail a los adherentes que poseen el mismo cargado o bien imprimir la factura
-a los que no lo poseen.
+
+Trx. SM31
+
+![img](image/index/1628706349801.png)
+
+
+En esta vista, agregamos la entrada para “crear anexo” que vemos en la vista anterior y la ponemos DESACTIVAMOS.
+
+![img](image/index/1628706349801.png)
+
+
+Alta de Ruta destino Origen de archivos
+
+Se16: V_FILEPATH
+Se16: V_filenaci
+
+Trx. FILE
+
+
+
+COMPORTAMIENTO FUNCIONAL
+
+Desde la Trx. FB02 o FB03
+CREACION de Documento escaneado
+
+![img](image/index/1628706349801.png)
+
+Te lleva a esta pantalla: 
+
+![img](image/index/1628706349801.png)
+
+
+Título: por ejemplo Factura
+
+Dirección: Click Derecho, Insertar Fichero.
+
+Mediante un acceso directo en el escritorio  que apunta al Servidor, se selecciona el documento escaneado
+
+
+![img](image/index/1628706349801.png)
+
+VISUALIZACION de Documento escaneado
+
+![img](image/index/1628706349801.png)
+
+Te lleva el o los documentos
+
+![img](image/index/1628706349801.png)
+
+CARPETAS/ NOMBRES ARCHIVOS/ FORMATO/ TAMAÑO
+
+Las carpetas a crear serán las siguientes
+
+**	FACTURA DIGITAL
+**	RECIBO DIGITAL
+
+
+Nombre de las facturas a guardar: Cuit_Sociedad_nroDocSAP_Ejercicio_TipoDOC.pdf
+•	Sociedad: 0100 OSPECON y 0200 UOCRA
+•	Ejercicio: Año
+•	NroDocSAP: de 10 dígitos (completar con ceros a la izq.).
+Ejemplo: 20123415036_0100_0100003481_2017_R
+
+
+PERMISOS
+
+CARPETAS:
+
+Sectores que realizaran el escaneo y carga de URL de recibos:
+•	Finanzas
+•	Contable
+
+Sectores que realizaran el escaneo y carga de URL de facturas:
+•	Contable
+•	Cuentas a Pagar
+•	Hospitales
+•	Patrimonio
+•	Control de Obas
+•	Mesa de Entradas? (en función del circuito que se defina)
+
+
+Estos sectores deberán tener acceso a las carpetas.
+Solo los jefes podrán borrar y mover archivos creados (control total).
+El resto de usuarios solo crear archivos.
+
+SAP:
+No tendrá determinación de permisos, ya que los usuarios que tengan acceso a los documentos van a poder crear la URL.
+
+LISTADO		
+
+Datos de Selección: Ejercicio y número de proveedor.
+
+Posibilidad de sacar un listado de todas las órdenes de pago por proveedor, con la marca que  posee recibo escaneado.
+INVESTIGAR COMO SE DETERMINA LA MARCA DE URL ASOCIADA
+
+(Es muy complicado si el sistemas debe fijarse el número de proveedor por archivo escaneado).
+
+
+TABLA QUE CONTIENE DOCUMENTOS DIGITALIZADOS:
+SRGBTBREL
+
+
+
+
+
 
 ## **Casos / Preguntas frecuentes**
 
