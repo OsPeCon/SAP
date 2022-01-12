@@ -13,9 +13,9 @@ eleventyNavigation:
 
 Permite crear roles simples y compuestos.
 
-![img](../../../images/PFCG/pfcg1.jpg)
+![img](../content/images/PFCG/pfcg1.jpg)
+![img](../content/images/PFCG/pfcg2.jpg) 
 
-![img](../../../images/PFCG/pfcg2.jpg) 
 
 Crear, Modificar y Visualisar.
 
