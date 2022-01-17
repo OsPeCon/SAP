@@ -1,68 +1,104 @@
-# Validacion Expediente Ape via WS
+---
+title: USUARIOS.
+date: Last Modified
+permalink: /USUARIOS/
+eleventyNavigation:
+    key: USUARIOS
+    order: 40
+    title: USUARIOS.
+---
+## **USUARIOS**
+
+**Descripción breve del proceso:**
+
+Permite crear roles simples y compuestos.
+
+![img](../content/images/PFCG/pfcg1.jpg)
+![img](../content/images/PFCG/pfcg2.jpg) 
 
 
-Programa (Web Service)  que valida  los nros. de expedientes cargados en una OC.
-
-Cómo funciona? SAP toma el expediente cargado en el campo “nro. Necesidad” al cargar una OC en la ME21 o modificarla en la ME22; y va a buscarlo al Centro Autorizador para validarlo
- 
-Estos son los mensajes que emitirá dicho control (por favor leer el mensaje para  asegurarse de que el mismo es correcto y dar “enter”)
+Crear, Modificar y Visualisar.
 
 
-* Expediente de materiales existe aprobado
 
-* Expediente de materiales existe rechazado
-* Expediente de materiales existe pendiente
+## Proceso paso a paso:
 
-* Expediente existe pero no corresponde a materiales
-* Expediente inexistente
+---
 
-*  Error en la comunicación.
-  
-* Debe ingresar expediente (Este mensaje aparece en rojo por mayor control, pero NO ES UN ERROR, sino que es una advertencia para que el usuario verifique realmente si no corresponde ingresar un nro de expediente).
+Solapas:
 
-***
+•	Descripción: Se asigna una descripción del Rol.
 
-# Objetivo
-Insertar un WS en una transaccion standard de SAP 
-Validar el ingreso de un Numero de expediente contra el Centro Autorizador
+•	Menú: Se seleccionan las Transacciones de acceso que va a tener el Rol.
 
-# Especificacion
-Enhancement Implementation:  ZMM_VALIDA_EXPEDIENTE
+•	Autorizaciones: Desde esta solapa se pueden asignar manualmente los objetos de autorizacion faltantes y especificar niveles de organización. También desde aca se realiza la Grabación y Generación del Rol.
 
-Programa: SAPMM06E	
+•	Usuario: No se asignan usuarios en el Rol Simple, ya que se hace desde el Rol Compuesto
 
-INCLUDE: MM06EF0F_FCODE_LOOP
+Creación de Rol Compuesto:
 
-Funcion: ZWS_CONSULTA_EXPEDIENTE_OC
+Cada Puesto de trabajo está representado por un Rol Compuesto.
 
-Destination: 'ZCONSULTA_EXPEDIENTE_OC'
+En esta transacción se puede 
 
-Formato de la devolución del método http://localhost/DigitalizacionExpedientes/odata/Traer(pIdExpediente=5476791), al que le agregamos el Estado del expediente.
+Crear   
+Modificar    
+Visualizar   
 
-Valores Posibles
-N= Rechazado
-P=Pendiente
-S=Aprobado
+Solapas:
 
- "value": [
-        {
-            "TipoPed": 3,
-            "Seccional": "0001",
-            "EventoId": 39,
-            "ObraSocial": "MON",
-            "Cuil": 20119989575,
-            "HisCli": 11998957,
-            "Nombre": "ARATTA NESTOR ADOLFO",
-            "Patologia": 0,
-            "DenoPatologia": "SIN PATOLOGIA SUR",
-            "Sur": 0,
-            "TramiteId": 0,
-            "DenoTipoPed": "PRACTICAS MEDICAS             ",
-            "DenoSeccional": "NODO CABALLITO                ",
-            "DenoEvento": "RECHAZO MEDICO FORMAL                             ",
-            "Programado": "",
-            "Estado": "N"
-        }
-    ]
+•	Descripción: Se asigna una descripción del Rol.
+
+•	Roles: se le asignan los roles simples que lo conformarán.
+
+•	Menú: Al asignar los roles simples, automaticamente se agregan las transacciones correspondientes.
+
+•	Usuario: Se asignan los usuarios que tendrán el Rol Compuesto (o Puesto de Trabajo). Una vez que se agregan o modifican los usuarios, hay que “comparar usuario”.
 
 
+Transporte:
+
+Se Ingresa el Rol Simple o Rol Compuesto y mediante el Botón   “Transportar Roles” se realiza el transporte.
+
+	Transportar también los roles simples de los roles compuestos
+	Transportar también los perfiles generados de los roles simples (con este tilde se transporta también la generación).
+
+Ejecutar.
+
+Selección de Objetos:
+
+	Asignación de usuario
+	Personalización 
+
+Se selecciona la orden de transporte.
+
+Desde la misma transacción se puede optar por Transportar en forma masiva, haciendo “Utilidades – Transportar en Masa”. Se puede realizar una selección múltiple de los roles a transportar.
+
+Administración de Usuarios
+
+* Transacción SU01
+
+Alta/ Baja/ Modificación
+Los usuarios no se transportan. Se crean previamente en cada mandante.
+
+Solapa Roles:
+En esta solapa se pueden ver los roles simples y los roles compuestos.
+Desde aquí se le puede dar validez a los roles compuestos modificando la fecha de periodo de validez “desde – hasta”. Por ejemplo se le puede asignar un puesto de trabajo (rol compuesto) por un tiempo estipulado.
+
+Solapa Parámetros: los parámetros y sus valores se asignan desde la transacción SU3. Para saber el ID de un parámetro, desde un campo determinado se hace “F1 – F9” (info técnica) y se saca el ID del parámetro.
+
+
+* Matriz	
+
+Con los cambios realizados actualizar la matriz.
+
+Solapas de la Matriz:
+
+Rol – Tx: en esta solapa se puede buscar una transacción en cuestión. Ya sea para ver si ya esta otorgada y a que Rol Simple y de ahí ver a que Rol Simple (Función) pertenece dicha transacción; o bien para ver si es una transacción faltante.
+
+Rol Compuesto – Rol Simple: en esta solapa se va con el Rol Simple y se buscan los puestos que están involucrados.
+
+Rol Simple – Usuario: en esta solapa se ven los puestos asignados a cada Rol Simple (Función)
+
+
+## Documentación Técnica
