@@ -1,9 +1,9 @@
 ---
 title: Roles y Perfiles.
 date: Last Modified
-permalink: /ROLES Y PERFILES/
+permalink: /Administracion Roles y Perfiles/
 eleventyNavigation:
-    key: Roles y Perfiles
+    key: Roles
     order: 40
     title: ROLES Y PERFILES.
 ---
