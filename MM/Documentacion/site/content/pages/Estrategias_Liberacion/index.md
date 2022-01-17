@@ -1,25 +1,21 @@
----
-title: Estrategias_Liberacion.
+ctitle: Estrategias_Liberacion.
 date: Last Modified
 permalink: /Estrategias_Liberacion/
 eleventyNavigation:
-    key: Estrategias_Liberacion.
-    order: 40
-    title: Estrategias_Liberacion.
----
-## **USUARIOS**
+key: Estrategias_Liberacion.
+order: 40
+title: Estrategias_Liberacion.
+
+## **Estrategias_Liberacion**
 
 **Descripción breve del proceso:**
 
-Permite crear roles simples y compuestos.
+Permite crear roles simples y `co`mpuestos.
 
 ![img](../content/images/PFCG/pfcg1.jpg)
-![img](../content/images/PFCG/pfcg2.jpg) 
-
+![img](../content/images/PFCG/pfcg2.jpg)
 
 Crear, Modificar y Visualisar.
-
-
 
 ## Proceso paso a paso:
 
@@ -39,11 +35,11 @@ Creación de Rol Compuesto:
 
 Cada Puesto de trabajo está representado por un Rol Compuesto.
 
-En esta transacción se puede 
+En esta transacción se puede
 
-Crear   
-Modificar    
-Visualizar   
+Crear
+Modificar
+Visualizar
 
 Solapas:
 
@@ -55,20 +51,23 @@ Solapas:
 
 •	Usuario: Se asignan los usuarios que tendrán el Rol Compuesto (o Puesto de Trabajo). Una vez que se agregan o modifican los usuarios, hay que “comparar usuario”.
 
-
 Transporte:
 
 Se Ingresa el Rol Simple o Rol Compuesto y mediante el Botón   “Transportar Roles” se realiza el transporte.
 
-	Transportar también los roles simples de los roles compuestos
-	Transportar también los perfiles generados de los roles simples (con este tilde se transporta también la generación).
+```
+Transportar también los roles simples de los roles compuestos
+Transportar también los perfiles generados de los roles simples (con este tilde se transporta también la generación).
+```
 
 Ejecutar.
 
 Selección de Objetos:
 
-	Asignación de usuario
-	Personalización 
+```
+Asignación de usuario
+Personalización 
+```
 
 Se selecciona la orden de transporte.
 
@@ -87,8 +86,7 @@ Desde aquí se le puede dar validez a los roles compuestos modificando la fecha 
 
 Solapa Parámetros: los parámetros y sus valores se asignan desde la transacción SU3. Para saber el ID de un parámetro, desde un campo determinado se hace “F1 – F9” (info técnica) y se saca el ID del parámetro.
 
-
-* Matriz	
+* Matriz
 
 Con los cambios realizados actualizar la matriz.
 
@@ -99,6 +97,5 @@ Rol – Tx: en esta solapa se puede buscar una transacción en cuestión. Ya sea
 Rol Compuesto – Rol Simple: en esta solapa se va con el Rol Simple y se buscan los puestos que están involucrados.
 
 Rol Simple – Usuario: en esta solapa se ven los puestos asignados a cada Rol Simple (Función)
-
 
 ## Documentación Técnica
