@@ -12,8 +12,8 @@ title: Estrategias_Liberacion.
 
 Permite crear roles simples y `co`mpuestos.
 
-![img](../content/images/PFCG/pfcg1.jpg)
-![img](../content/images/PFCG/pfcg2.jpg)
+![img](../content/images/Estrategias_Liberacion/edl1.jpg)
+![img](../content/images/Estrategias_Liberacion/edl2.jpg)
 
 Crear, Modificar y Visualisar.
 
