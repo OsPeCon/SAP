@@ -1,3 +1,15 @@
+---
+title: Expediente Validación.
+date: Last Modified
+permalink: /Expediente_Validacion/
+eleventyNavigation:
+    key: expediente
+    order: 50
+    title: Expediente Validación
+---
+
+
+
 # Validacion Expediente Ape via WS
 
 

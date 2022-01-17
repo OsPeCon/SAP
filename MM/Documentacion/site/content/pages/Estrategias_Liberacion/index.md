@@ -1,10 +1,13 @@
-ctitle: Estrategias_Liberacion.
+---
+title: Estrategias Liberación.
 date: Last Modified
 permalink: /Estrategias_Liberacion/
 eleventyNavigation:
-key: Estrategias_Liberacion.
-order: 40
-title: Estrategias_Liberacion.
+    key: estrategias
+    order: 40
+    title: Estrategias Liberacion
+   
+---
 
 ## **Estrategias_Liberacion**
 
