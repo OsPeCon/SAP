@@ -1,11 +1,11 @@
 ---
-title: USUARIOS.
+title: Estrategias_Liberacion.
 date: Last Modified
-permalink: /USUARIOS/
+permalink: /Estrategias_Liberacion/
 eleventyNavigation:
-    key: USUARIOS
+    key: Estrategias_Liberacion.
     order: 40
-    title: USUARIOS.
+    title: Estrategias_Liberacion.
 ---
 ## **USUARIOS**
 
