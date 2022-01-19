@@ -13,7 +13,7 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
-Permite crear roles simples y `co`mpuestos.
+Permite crear roles simples y compuestos.
 
 ![img](../content/images/Estrategias_Liberacion/edl1.jpg)
 ![img](../content/images/Estrategias_Liberacion/edl2.jpg)
