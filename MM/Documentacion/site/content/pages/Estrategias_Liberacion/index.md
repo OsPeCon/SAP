@@ -16,6 +16,7 @@ eleventyNavigation:
 Cambios y configuraciones, estrategias 
 
 ![img](../content/images/Estrategias_Liberacion/edl1.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl2.jpg)
 
 Crear, Modificar y Visualisar.
