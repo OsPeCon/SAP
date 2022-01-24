@@ -17,19 +17,33 @@ Cambios y configuraciones, estrategias
 
 ![img](../content/images/Estrategias_Liberacion/edl1.jpg)
 
+
 ![img](../content/images/Estrategias_Liberacion/edl2.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl3.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl4.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl5.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl6.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl7.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl8.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl9.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl10.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl11.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl12.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl13.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl14.jpg)
+
 ![img](../content/images/Estrategias_Liberacion/edl15.jpg)
 
 
