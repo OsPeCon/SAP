@@ -78,3 +78,37 @@ Sociedad, Grupos de Compras, Valor neto total del pedido, clase de pedido.
 
 
 ## Documentación Técnica
+
+* CUSTOMAIZING
+
+![img](../content/images/Estrategias_Liberacion/edl16.jpg)
+
+* ROLES
+
+RS9999_MM-CC_LIBORDCOMP
+RS9999_LIBERPEDIDOJF
+
+![img](../content/images/Estrategias_Liberacion/edl17.jpg)
+
+* CODIGOS DE LIBERACION ACTUALES
+
+JT: Javier Lopez, Miguel Traboscia
+JF: Jorge Tavello 
+----------------------------------
+
+ EJEMPLO DE ESTRATEGIA 07 
+
+![img](../content/images/Estrategias_Liberacion/edl18.jpg)
+
+Estados de liberación para el mismo
+
+![img](../content/images/Estrategias_Liberacion/edl19.jpg)
+
+Clasificación de valores 
+(para grupo de compras 012 =
+
+![img](../content/images/Estrategias_Liberacion/edl20.jpg)
+
+Valores
+
+![img](../content/images/Estrategias_Liberacion/edl21.jpg)
