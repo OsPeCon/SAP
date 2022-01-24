@@ -79,7 +79,7 @@ Sociedad, Grupos de Compras, Valor neto total del pedido, clase de pedido.
 
 ## Documentación Técnica
 
-* CUSTOMAIZING
+* CUSTOMIZING
 
 ![img](../content/images/Estrategias_Liberacion/edl16.jpg)
 
