@@ -18,6 +18,7 @@ Cambios y configuraciones, estrategias
 ![img](../content/images/Estrategias_Liberacion/edl1.jpg)
 
 
+
 ![img](../content/images/Estrategias_Liberacion/edl2.jpg)
 
 ![img](../content/images/Estrategias_Liberacion/edl3.jpg)
