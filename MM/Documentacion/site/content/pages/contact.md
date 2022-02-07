@@ -1,3 +1,4 @@
+npm start
 ---
 layout: layouts/contact.njk
 title: Send a message 
