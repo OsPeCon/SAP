@@ -18,9 +18,9 @@ Método 3: Transacción SE16N + Debug
 Este método favorito permite editar completamente las tablas y no está afectado por la nota que inhabilita el método anterior.
 
 
-![img](../content/images/7.TRANSACCIONES/trx1.jpg)
+![img](../content/images/Transacciones/trx1.jpg)
 
-![img](../content/images/7.TRANSACCIONES/trx2.jpg)
+![img](../content/images/Transacciones/trx2.jpg)
 
 
 ## Proceso paso a paso:
@@ -28,15 +28,15 @@ Este método favorito permite editar completamente las tablas y no está afectad
  
 A) Para hacerlo ingresa en la transacción SE16N
  
-![img](../content/images/7.TRANSACCIONES/trx3.jpg)
+![img](../content/images/Transacciones/trx3.jpg)
 
 B) luego pones el nombre de la tabla e ingresas en modo debug (colocando /h en la parte donde escribes los códigos de las transacciones y presionando dos veces la tecla Enter)
 
-![img](../content/images/7.TRANSACCIONES/trx4.jpg)
+![img](../content/images/Transacciones/trx4.jpg)
 
 C) luego edita las variables GD-EDIT y GD-SAPEDIT cambiando sus valores por una letra X y presionas la tecla F8 para continuar.
 
-![img](../content/images/7.TRANSACCIONES/trx5.jpg)
+![img](../content/images/Transacciones/trx5.jpg)
 
 
 
