@@ -10,7 +10,6 @@ eleventyNavigation:
 ## **SE16N MODO DEBUG**
 
 
-
 **Descripción breve del proceso:**
 
 Método 3: Transacción SE16N + Debug 
