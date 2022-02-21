@@ -33,9 +33,9 @@ C) luego edita las variables GD-EDIT y GD-SAPEDIT cambiando sus valores por una 
 
 ![img](../content/images/Transacciones/trx3.jpg)
 
-D) Luego F8 y ahi va hacer posible modificar los valores.
-
 ![img](../content/images/Transacciones/trx4.jpg)
+
+D) Luego F8 y ahi va hacer posible modificar los valores.
 
 ![img](../content/images/Transacciones/trx5.jpg)
 
