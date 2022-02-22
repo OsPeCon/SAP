@@ -162,6 +162,8 @@ Cada vez que se cree una entrada z en la transacción FILE debería crearse una 
 
 ![img](../content/images/Digitalizacion_Documentos_FI_MM/D11.jpg)
 
+![img](../content/images/Digitalizacion_Documentos_FI_MM/D13.jpg)
+
 ![img](../content/images/Digitalizacion_Documentos_FI_MM/D12.jpg)
 
 
