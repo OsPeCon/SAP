@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 ## **IMPLEMENTACION SOCIEDAD**
 .
-FUNDACION CONSTRUIR FUTURO
+FUNDACION CONSTRUIR FUTURO.
 
 | Documentado por | Mariela Etcheverry - SAP – Tecnología de la Información |
 |-----------------|---------------------------------------------------------|
