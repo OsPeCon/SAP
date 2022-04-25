@@ -1,11 +1,11 @@
 ---
-title: Documentacion SAP GESTION.
+title: Documentacion GETION.
 date: Last Modified
 permalink: /
 eleventyNavigation:
-    key: Documentacion SAP GESTION
+    key: documenta
     order: 0
-    title: Documentacion SAP GESTION
+    title: Documentacion SAP GESTIO.
 ---
 
 <!-- @format -->
