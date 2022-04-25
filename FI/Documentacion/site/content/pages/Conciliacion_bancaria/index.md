@@ -47,8 +47,6 @@ El Programa ZCONCILIA Guarda en \uocrafs\ datanet\ backup, una copia del archivo
 
 Ademas, se guarda un log de las contabilizaciones y errores del proceso.
 
-Trx. ZFI_DATANET: Reporte que permite visualizar la tabla ZDATANET001.
-
 ### Casos / Preguntas frecuentes
 
 No existen casos a la fecha
@@ -110,7 +108,7 @@ anualmente en forma manual, por parte de Tecnología de la Información.
 Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
 
 ```
-- [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
+-   [ ] Fecha de documento (BLDAT): toma la FECHA_VALOR.
 
 - [ ] Fecha de contabilización (BUDAT): toma la FECHA_VALOR.
 
@@ -128,9 +126,6 @@ Cuando SAP realiza el asiento, el tratamiento de dichas fechas, es el siguiente:
 * Guarda en \uocrafs\ datanet\ log una copia del log de errores generado.
 
 * Mediante la Transacción ZLOG se visualiza el LOG generado.
-
-Actualización 15/11/21
-* Se chequea el campo fecha proceso en la tabla ZDATANET001. Si existe la misma, salen 2 popups, uno de advertencia y otro si se desea procesar el archivo.
 
 **Detalle técnico de las TABLAS creadas:**
 
