@@ -5,7 +5,7 @@ permalink: /
 eleventyNavigation:
     key: documenta
     order: 0
-    title: Documentacion SAP GESTIO.
+    title: Documentacion SAP GESTION.
 ---
 
 <!-- @format -->
