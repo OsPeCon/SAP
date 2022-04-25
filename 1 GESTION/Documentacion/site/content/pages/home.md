@@ -1,11 +1,11 @@
 ---
-title: Documentacion GETION.
+title: Documentacion SAP HR.
 date: Last Modified
 permalink: /
 eleventyNavigation:
     key: documenta
     order: 0
-    title: Documentacion SAP GESTION.
+    title: Documentacion SAP HR.
 ---
 
 <!-- @format -->
