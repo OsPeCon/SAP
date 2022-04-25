@@ -8,8 +8,8 @@ eleventyNavigation:
     title: IMPLEMENTACION SOCIEDAD.
 ---
 ## **IMPLEMENTACION SOCIEDAD**
-.
-FUNDACION CONSTRUIR FUTURO
+
+FUNDACION CONSTRUIR FUTURO.
 
 | Documentado por | Mariela Etcheverry - SAP – Tecnología de la Información |
 |-----------------|---------------------------------------------------------|
