@@ -1,11 +1,11 @@
 ---
-title: TRX SE16N.
+title: TRANSACCIONES.
 date: Last Modified
-permalink: /TRX SE16N/
+permalink: /TRANSACCIONES/
 eleventyNavigation:
-    key: trx se16n
+    key: transacciones
     order: 100
-    title: TRX SE16N.
+    title: TRANSACCIONES.
 ---
 ## **SE16N MODO DEBUG**
 
@@ -37,6 +37,26 @@ C) luego edita las variables GD-EDIT y GD-SAPEDIT cambiando sus valores por una 
 D) Luego F8 y ahi va hacer posible modificar los valores.
 
 ![img](../content/images/Transacciones/trx5.jpg)
+
+
+**
+ 
+## **TRX. OBA3**
+
+**Descripción breve del proceso:**
+
+Actualiza tabla T043G
+
+![img](../content/images/OBA3/oba1.jpg)
+
+![img](../content/images/OBA3/oba2.jpg)
+
+![img](../content/images/OBA3/oba3.jpg)
+
+![img](../content/images/OBA3/oba4.jpg)
+
+
+
 
 
 
