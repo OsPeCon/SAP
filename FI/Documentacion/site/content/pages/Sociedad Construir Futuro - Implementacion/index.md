@@ -1,11 +1,11 @@
 ---
 title: IMPLEMENTACION SOCIEDAD.
 date: Last Modified
-permalink: /IMPLEMENTACION SOCIEDAD./
+permalink: /Construir Futuro./
 eleventyNavigation:
-    key: implementacion sociedad
+    key: Construir Futuro.
     order: 120
-    title: IMPLEMENTACION SOCIEDAD.
+    title: CONSTRUIR FUTURO.
 ---
 ## **IMPLEMENTACION SOCIEDAD**
 
