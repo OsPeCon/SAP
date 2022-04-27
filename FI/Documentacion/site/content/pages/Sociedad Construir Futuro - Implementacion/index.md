@@ -1,5 +1,5 @@
 ---
-title: IMPLEMENTACION SOCIEDAD.
+title: CONSTRUIR FUTURO.
 date: Last Modified
 permalink: /Construir Futuro./
 eleventyNavigation:
