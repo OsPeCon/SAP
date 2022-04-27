@@ -117,7 +117,7 @@ Valores
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-**Instructivbo de carga de OC T.I.**
+**Instructivo de carga de OC T.I.**
 
 ![img](../content/images/Estrategias_Liberacion/oc1.jpg)
 
