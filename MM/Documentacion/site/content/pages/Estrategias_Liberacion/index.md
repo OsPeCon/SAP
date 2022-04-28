@@ -11,7 +11,10 @@ eleventyNavigation:
 
 ## **Estrategias_Liberacion**
 
+
 **Descripción breve del proceso:**
+
+El usuario ingresa tx. me29b y en el momento de la liberacion se ponen en marcha las extratejias predefinidas por sistemas.
 
 Cambios y configuraciones, estrategias 
 
