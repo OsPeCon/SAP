@@ -14,6 +14,9 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
+
+
+
 ## Proceso paso a paso:
 
 El usuario ingresa tx. me29b y en el momento de la liberacion se ponen en marcha las extratejias predefinidas por sistemas.
