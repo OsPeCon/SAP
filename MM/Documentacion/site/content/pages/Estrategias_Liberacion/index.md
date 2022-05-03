@@ -14,9 +14,10 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
+Se carga un pedido el cual debe ser liberado, ahí entran en juego las estrategias de liberacion. De acuerdo al tipo de pedido y al sector estas varian. 
+
 El usuario ingresa tx. me29b y en el momento de la liberacion se ponen en marcha las extratejias predefinidas por sistemas.
 
-Se carga un pedido el cual debe ser liberado, ahí entran en juego las estrategias de liberacion. De acuerdo al tipo de pedido y al sector estas varian. 
 
 ## Proceso paso a paso:
 
