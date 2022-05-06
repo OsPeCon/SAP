@@ -484,3 +484,4 @@ Nota: cada batch tiene un máximo de 500 transacciones, es decir 1000 registros.
 
 
 ## Documentación Técnica
+
