@@ -3,6 +3,7 @@ title: APERTURAPDF.
 date: Last Modified
 permalink: /APERTURAPDF/
 eleventyNavigation:
+    parent: otras instlaciones
     key: aperturapdf
     order: 50
     title: APERTURAPDF.

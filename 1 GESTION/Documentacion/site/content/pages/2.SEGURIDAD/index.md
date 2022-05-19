@@ -1,12 +1,11 @@
 ---
-title: PDF CREATOR.
+title: SEGURIDAD.
 date: Last Modified
-permalink: /PDF CREATOR/
+permalink: /SEGURIDAD/
 eleventyNavigation:
-    parent: otras instlaciones
-    key: pdf creator
+    key: seguridad
     order: 40
-    title: PDF CREATOR.
+    title: SEGURIDAD.
 ---
 ## **PSTI: Facturacion Adherentes**
 

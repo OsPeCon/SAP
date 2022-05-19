@@ -3,6 +3,7 @@ title: BULLZIP.
 date: Last Modified
 permalink: /BULLZIP/
 eleventyNavigation:
+    parent: otras instlaciones
     key: bullzip
     order: 50
     title: BULLZIP.

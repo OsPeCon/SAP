@@ -3,6 +3,7 @@ title: PFCG.
 date: Last Modified
 permalink: /PFCG/
 eleventyNavigation:
+    parent: seguridad
     key: PFCG
     order: 40
     title: PFCG.

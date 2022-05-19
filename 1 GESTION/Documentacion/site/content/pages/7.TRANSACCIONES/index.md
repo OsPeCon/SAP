@@ -3,6 +3,7 @@ title: TRANSACCIONES.
 date: Last Modified
 permalink: /TRANSACCIONES/
 eleventyNavigation:
+    parent: otras instlaciones
     key: transacciones
     order: 100
     title: TRANSACCIONES.

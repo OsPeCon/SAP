@@ -3,7 +3,8 @@ title: USUARIOS.
 date: Last Modified
 permalink: /USUARIOS/
 eleventyNavigation:
-    key: USUARIOS
+    parent: seguridad
+    key: usuarios	
     order: 40
     title: USUARIOS.
 ---
@@ -11,94 +12,41 @@ eleventyNavigation:
 
 **Descripción breve del proceso:**
 
-Permite crear roles simples y compuestos.
-
-![img](../content/images/PFCG/pfcg1.jpg)
-![img](../content/images/PFCG/pfcg2.jpg) 
-
-
-Crear, Modificar y Visualisar.
-
-
+A travez de la transaccion SU01 Se pueden crear, modificaar y eliminar usuarios en SAP.
 
 ## Proceso paso a paso:
 
----
+El usuario debe darse de alta en los tres mandantes de SAP (Desarrollo, Quality y Productivo)
 
-Solapas:
+1) Primero se genera una orden de transporte en SolMan. 
 
-•	Descripción: Se asigna una descripción del Rol.
+2) Luego con la trx. SU01 se crea la cuenta en los tres mandantes (Dev,Qua,Prod.)
+Lo recomendable es que el usuario se genere a travez de un copia de otro usuario del mismo sector que ya este funcional en el sitema.
 
-•	Menú: Se seleccionan las Transacciones de acceso que va a tener el Rol.
+3) Una vez realizado esto, ir a la SPRO
 
-•	Autorizaciones: Desde esta solapa se pueden asignar manualmente los objetos de autorizacion faltantes y especificar niveles de organización. También desde aca se realiza la Grabación y Generación del Rol.
+F5
+![img](../content/images/BullZip/bullzip1.jpg)
 
-•	Usuario: No se asignan usuarios en el Rol Simple, ya que se hace desde el Rol Compuesto
+4) Parametrizaciones basicas de Gestion Financiera.
 
-Creación de Rol Compuesto:
+![img](../content/images/BullZip/bullzip1.jpg)
 
-Cada Puesto de trabajo está representado por un Rol Compuesto.
+5) Documento
 
-En esta transacción se puede 
+6) Posición de documento
 
-Crear   
-Modificar    
-Visualizar   
+7) Asignar usuarios/grupos de tolerancia
 
-Solapas:
+![img](../content/images/BullZip/bullzip1.jpg)
 
-•	Descripción: Se asigna una descripción del Rol.
+8) Usuario = 1
 
-•	Roles: se le asignan los roles simples que lo conformarán.
+![img](../content/images/BullZip/bullzip1.jpg)
 
-•	Menú: Al asignar los roles simples, automaticamente se agregan las transacciones correspondientes.
+9) Una vez dado de alta el usuario se debe esperar el mail de confirmacion de que esta todo funcionando correctamente, el mismo sirve para dar por finalizado el ticket generado en SolMan y e3n Notion.
 
-•	Usuario: Se asignan los usuarios que tendrán el Rol Compuesto (o Puesto de Trabajo). Una vez que se agregan o modifican los usuarios, hay que “comparar usuario”.
-
-
-Transporte:
-
-Se Ingresa el Rol Simple o Rol Compuesto y mediante el Botón   “Transportar Roles” se realiza el transporte.
-
-	Transportar también los roles simples de los roles compuestos
-	Transportar también los perfiles generados de los roles simples (con este tilde se transporta también la generación).
-
-Ejecutar.
-
-Selección de Objetos:
-
-	Asignación de usuario
-	Personalización 
-
-Se selecciona la orden de transporte.
-
-Desde la misma transacción se puede optar por Transportar en forma masiva, haciendo “Utilidades – Transportar en Masa”. Se puede realizar una selección múltiple de los roles a transportar.
-
-Administración de Usuarios
-
-* Transacción SU01
-
-Alta/ Baja/ Modificación
-Los usuarios no se transportan. Se crean previamente en cada mandante.
-
-Solapa Roles:
-En esta solapa se pueden ver los roles simples y los roles compuestos.
-Desde aquí se le puede dar validez a los roles compuestos modificando la fecha de periodo de validez “desde – hasta”. Por ejemplo se le puede asignar un puesto de trabajo (rol compuesto) por un tiempo estipulado.
-
-Solapa Parámetros: los parámetros y sus valores se asignan desde la transacción SU3. Para saber el ID de un parámetro, desde un campo determinado se hace “F1 – F9” (info técnica) y se saca el ID del parámetro.
-
-
-* Matriz	
-
-Con los cambios realizados actualizar la matriz.
-
-Solapas de la Matriz:
-
-Rol – Tx: en esta solapa se puede buscar una transacción en cuestión. Ya sea para ver si ya esta otorgada y a que Rol Simple y de ahí ver a que Rol Simple (Función) pertenece dicha transacción; o bien para ver si es una transacción faltante.
-
-Rol Compuesto – Rol Simple: en esta solapa se va con el Rol Simple y se buscan los puestos que están involucrados.
-
-Rol Simple – Usuario: en esta solapa se ven los puestos asignados a cada Rol Simple (Función)
+10) Por ultimo completar los datos en las planillas de Matriz y Licencias 2022 Actualizadas y las mismas quedan actualizadas VSC.
 
 
 ## Documentación Técnica

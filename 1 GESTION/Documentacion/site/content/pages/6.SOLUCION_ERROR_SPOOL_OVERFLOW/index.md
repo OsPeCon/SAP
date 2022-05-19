@@ -3,6 +3,7 @@ title: ERROR SPOOL OVERFLOW.
 date: Last Modified
 permalink: /ERROR SPOOL OVERFLOW/
 eleventyNavigation:
+    parent: otras instlaciones
     key: error spool overflow
     order: 40
     title: ERROR SPOOL OVERFLOW.

@@ -1,12 +1,11 @@
 ---
-title: PDF CREATOR.
+title: OTRAS INTALACIONES.
 date: Last Modified
-permalink: /PDF CREATOR/
+permalink: /OTRAS INTALACIONES/
 eleventyNavigation:
-    parent: otras instlaciones
-    key: pdf creator
+    key: otras instalaciones
     order: 40
-    title: PDF CREATOR.
+    title: OTRAS INTALACIONES.
 ---
 ## **PSTI: Facturacion Adherentes**
 

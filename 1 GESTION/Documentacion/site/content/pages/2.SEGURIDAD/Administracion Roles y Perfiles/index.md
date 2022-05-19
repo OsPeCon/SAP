@@ -3,6 +3,7 @@ title: Roles y Perfiles.
 date: Last Modified
 permalink: /Administracion Roles y Perfiles/
 eleventyNavigation:
+    parent: seguridad
     key: Roles
     order: 40
     title: ROLES Y PERFILES.

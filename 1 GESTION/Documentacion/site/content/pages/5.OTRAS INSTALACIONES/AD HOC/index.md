@@ -3,6 +3,7 @@ title: AD HOC.
 date: Last Modified
 permalink: /AD HOC/
 eleventyNavigation:
+    parent: otras instalaciones
     key: ad hoc
     order: 40
     title: AD HOC.
