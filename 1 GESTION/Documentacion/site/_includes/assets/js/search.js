@@ -1,4 +1,10 @@
 (function (window, document) {
+  const URL = window.location.pathname;
+  let pathPrefix = "";
+  if (window.location.hostname.toUpperCase() != "LOCALHOST") {
+      const URL_PARTS = URL.split("/")[1] || "";
+      pathPrefix = "/" + URL_PARTS + "/";
+  }
     "use strict";
     const search = (e) => {
       const results = window.searchIndex.search(e.target.value, {
@@ -38,7 +44,7 @@
             el.appendChild(h3);
     
             const a = document.createElement("a");
-            a.setAttribute("href", id);
+            a.setAttribute("href", pathPrefix+id);
             a.textContent = title;
             h3.appendChild(a);
     
@@ -53,7 +59,7 @@
         noResultsEl.classList.add("hidden")
       }
     };
-    fetch("/search-index.json").then((response) =>
+    fetch(pathPrefix + "/search-index.json").then((response) =>
       response.json().then((rawIndex) => {
         window.searchIndex = elasticlunr.Index.load(rawIndex);
         document.getElementById("searchField").addEventListener("input", search);
