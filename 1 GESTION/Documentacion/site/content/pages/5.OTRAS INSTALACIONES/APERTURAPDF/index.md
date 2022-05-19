@@ -1,12 +1,12 @@
 ---
-title: APERTURAPDF.
+title:  APERTURA PDF.
 date: Last Modified
-permalink: /APERTURAPDF/
+permalink: /APERTURA PDF/
 eleventyNavigation:
-    parent: otras instlaciones
-    key: aperturapdf
-    order: 50
-    title: APERTURAPDF.
+    parent: otras instalaciones
+    key: apertura pdf
+    order: 41
+    title: APERTURA PDF.
 ---
 ## **Apertura PDF**
 

@@ -1,12 +1,11 @@
 ---
-title: ERROR SPOOL OVERFLOW.
+title: SOLUCION ERROR SPOOL OVERFLOW.
 date: Last Modified
-permalink: /ERROR SPOOL OVERFLOW/
+permalink: /SOLUCION ERROR SPOOL OVERFLOW/
 eleventyNavigation:
-    parent: otras instlaciones
-    key: error spool overflow
-    order: 40
-    title: ERROR SPOOL OVERFLOW.
+    key: solucion error spool overflow
+    order: 42
+    title: SOLUCION ERROR SPOOL OVERFLOW.
 ---
 ## **SOLUCION ERROR SPOOL OVERFLOW**
 

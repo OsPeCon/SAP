@@ -1,11 +1,11 @@
 ---
-title: PDF CREATOR.
+title:  PDF CREATOR.
 date: Last Modified
 permalink: /PDF CREATOR/
 eleventyNavigation:
-    parent: otras instlaciones
+    parent: otras instalaciones
     key: pdf creator
-    order: 40
+    order: 42
     title: PDF CREATOR.
 ---
 ## **PSTI: Facturacion Adherentes**
