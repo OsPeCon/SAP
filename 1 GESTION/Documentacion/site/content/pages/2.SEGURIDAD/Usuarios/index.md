@@ -18,36 +18,36 @@ A travez de la transaccion SU01 Se pueden crear, modificaar y eliminar usuarios 
 
 El usuario debe darse de alta en los tres mandantes de SAP (Desarrollo, Quality y Productivo)
 
-1) Primero se genera una orden de transporte en SolMan. 
+1.Primero se genera una orden de transporte en SolMan. 
 
-2) Luego con la trx. SU01 se crea la cuenta en los tres mandantes (Dev,Qua,Prod.)
+2.Luego con la trx. SU01 se crea la cuenta en los tres mandantes (Dev,Qua,Prod.)
 Lo recomendable es que el usuario se genere a travez de un copia de otro usuario del mismo sector que ya este funcional en el sistema.
 
-3) Una vez realizado esto, ir a la SPRO
+3.Una vez realizado esto, ir a la SPRO
 
 F5
 
 ![img](../content/images/BullZip/bullzip1.jpg)
 
-4) Parametrizaciones basicas de Gestion Financiera.
+4.Parametrizaciones basicas de Gestion Financiera.
 
 ![img](../content/images/BullZip/bullzip1.jpg)
 
-5) Documento
+5.Documento
 
-6) Posición de documento
+6.Posición de documento
 
-7) Asignar usuarios/grupos de tolerancia
-
-![img](../content/images/BullZip/bullzip1.jpg)
-
-8) Usuario = 1
+7.Asignar usuarios/grupos de tolerancia
 
 ![img](../content/images/BullZip/bullzip1.jpg)
 
-9) Una vez dado de alta el usuario se debe esperar el mail de confirmacion de que esta todo funcionando correctamente, el mismo sirve para dar por finalizado el ticket generado en SolMan y en Notion.
+8.Usuario = 1
 
-10) Por ultimo completar los datos en las planillas de Matriz y Licencias 2022 Actualizadas y las mismas quedan actualizadas VSC.
+![img](../content/images/BullZip/bullzip1.jpg)
+
+9.Una vez dado de alta el usuario se debe esperar el mail de confirmacion de que esta todo funcionando correctamente, el mismo sirve para dar por finalizado el ticket generado en SolMan y en Notion.
+
+10.Por ultimo completar los datos en las planillas de Matriz y Licencias 2022 Actualizadas y las mismas quedan actualizadas VSC. 
 
 
 ## Documentación Técnica
