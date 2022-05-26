@@ -54,15 +54,17 @@ F5
 
 Usuario = 1
 
+8.Ingresar TRX. SE10 y liberar las ordenes.
+
 ![img](../content/images/Usuarios/abm9.jpg)
 
 ![img](../content/images/Usuarios/abm10.jpg)
 
 
-8.Una vez dado de alta el usuario se debe esperar el mail de confirmacion de que esta todo funcionando correctamente, el mismo sirve para dar por finalizado el ticket generado en SolMan y en Notion.
+9.Una vez dado de alta el usuario se debe esperar el mail de confirmacion de que esta todo funcionando correctamente, el mismo sirve para dar por finalizado el ticket generado en SolMan y en Notion.
 
 
-9.Por ultimo completar los datos en las planillas de Matriz y Licencias 2022 Actualizadas y las mismas quedan actualizadas VSC. 
+10.Por ultimo completar los datos en las planillas de Matriz y Licencias 2022 Actualizadas y las mismas quedan actualizadas VSC. 
 
 
 
